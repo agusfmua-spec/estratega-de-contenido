@@ -131,6 +131,16 @@ SUEÑO MEDIBLE → DIAGNÓSTICO (el dato que duele) → LÓGICA (por qué pasa) 
 - **Los 3 cambios clave**, nombrados y explicados (el QUÉ), sin las herramientas.
 - **Cierre emocional:** fragmento de video o audio de la clienta contando cómo cambió su vida.
 - **CTA:** "Si quieres este análisis de tu cuenta, aplica."
+- ⏱️ **Estructura de 20 minutos (qué hablar y cuánto):**
+  - **0:00–0:30 · Hook (sueño medible):** el resultado a los 90 días.
+  - **0:30–1:30 · Promesa:** "te muestro exactamente qué cambió".
+  - **1:30–5:00 · El antes:** feed, bio, oferta, tipo de DMs y métricas.
+  - **5:00–8:00 · El diagnóstico:** qué fase del método fallaba y qué señales lo mostraban.
+  - **8:00–14:00 · Los 3 cambios clave (2 minutos cada uno):** qué cambió y por qué, sin las herramientas.
+  - **14:00–17:00 · El después:** métricas a los 30, 60 y 90 días.
+  - **17:00–19:00 · La clienta:** su audio o video contando cómo cambió su vida.
+  - **19:00–20:00 · Cierre emocional y CTA.**
+- 🔁 **CTA a elección:** 🟢 Valor: "Comentá DIAGNÓSTICO y te mando el test gratis para ver dónde estás vos" · 🟡 Mentalidad / conexión: "Contame qué parte del antes te resultó conocida" · 🔴 Venta sutil: "Si querés este análisis de tu cuenta, en la descripción te cuento cómo aplicar".
 
 ### YT-T2 · "Audito 3 bios de Instagram de marcas personales en vivo" — Dolor 1 + 5
 - **Hook:** "Tu bio puede hacer que una desconocida decida trabajar contigo en 5 segundos."
@@ -138,3 +148,12 @@ SUEÑO MEDIBLE → DIAGNÓSTICO (el dato que duele) → LÓGICA (por qué pasa) 
 - **El QUÉ:** los 4 elementos que tiene una bio que vende. *(Sin plantilla.)*
 - **Cierre emocional:** "Tu bio es la puerta de tu negocio. Mereces que diga lo que vales."
 - **CTA:** "Deja tu @ en comentarios: elijo 3 para el próximo video."
+- ⏱️ **Estructura de 20 minutos (qué hablar y cuánto):**
+  - **0:00–0:30 · Hook (sueño):** una bio que hace que una desconocida decida trabajar con vos en 5 segundos.
+  - **0:30–2:00 · Promesa y por qué importa la bio:** es la puerta de tu negocio.
+  - **2:00–7:00 · Bio 1:** qué comunica · qué nivel de conciencia atrae · qué le falta.
+  - **7:00–12:00 · Bio 2:** lo mismo.
+  - **12:00–17:00 · Bio 3:** lo mismo.
+  - **17:00–19:00 · El QUÉ:** los 4 elementos de una bio que vende (posicionamiento, promesa, diferencia, prueba), sin plantilla.
+  - **19:00–20:00 · Cierre emocional y CTA.**
+- 🔁 **CTA a elección:** 🟢 Valor: "Dejá tu @ y elijo 3 para el próximo video" (sugerido) · 🟡 Mentalidad / conexión: "Contame qué sentís cuando alguien entra a tu perfil" · 🔴 Venta sutil: "Si querés que trabajemos tu perfil completo, escribime BIO por Instagram".

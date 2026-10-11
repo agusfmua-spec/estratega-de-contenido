@@ -243,13 +243,15 @@ const PROFILES = [
 const CTAS = [
   {id:"auto",n:"🎯 Automático (mix 70 / 25 / 5)"},
   {id:"valor",n:"🟢 Valor: guardar, compartir, lead magnet o enlace"},
-  {id:"medio",n:"🟡 Medio: conversación, opinión, clase o caso"},
-  {id:"venta",n:"🔴 Venta directa"}
+  {id:"medio",n:"🟡 Mentalidad / conexión: historia, opinión, charla"},
+  {id:"sutil",n:"🔴 Venta sutil: invitar a charlar sin que se note"},
+  {id:"venta",n:"🔴 Venta directa (apertura de cupos)"}
 ];
 const CTA_GUIDE = {
-  auto:"OBJETIVO DEL CTA: elegí vos según la pieza, respetando el mix del embudo (70 % valor, 20-25 % medio, 5 % venta). Por defecto cerrá con un CTA de VALOR. Usá venta directa solo si la pieza es claramente de venta. Decí al principio de la pieza qué etapa elegiste.",
+  auto:"OBJETIVO DEL CTA: elegí vos según la pieza, respetando el mix del embudo (70 % valor, 20-25 % medio, 5 % venta). Por defecto cerrá con un CTA de VALOR. Usá venta (sutil) solo si la pieza es claramente de venta, y nunca venta directa salvo que lo pida. Decí al principio de la pieza qué etapa elegiste.",
   valor:"OBJETIVO DEL CTA: 🟢 VALOR. Nada de vender. Cerrá con guardar, compartir, seguir, comentar, un lead magnet o un enlace a otro contenido (\"Ya grabé un reel sobre esto, comentá REEL y te lo mando\", \"Tengo un video en YouTube, comentá VIDEO\").",
-  medio:"OBJETIVO DEL CTA: 🟡 MEDIO DEL EMBUDO. La pieza tiene más vulnerabilidad, historia u opinión. Cerrá con una conversación (contame en comentarios, respondeme por DM, sin vender), un lead magnet profundo (clase gratuita, análisis de caso) o la lista de espera.",
+  medio:"OBJETIVO DEL CTA: 🟡 MENTALIDAD / CONEXIÓN (medio del embudo). La pieza tiene más vulnerabilidad, historia, mentalidad u opinión. Cerrá con una conversación (contame en comentarios, respondeme por DM, sin vender), un lead magnet profundo (clase gratuita, análisis de caso) o la lista de espera.",
+  sutil:"OBJETIVO DEL CTA: 🔴 VENTA SUTIL. Vender sin que se note: el método aparece como contexto (\"esto es lo que trabajo con mis clientas\") y el CTA invita a charlar, no a comprar (\"si querés que lo miremos en tu caso, escribime [PALABRA] y lo charlamos\"). Nada de urgencia ni precio.",
   venta:"OBJETIVO DEL CTA: 🔴 VENTA DIRECTA. Invitación clara a comprar o aplicar, desde el permiso y sin presión, con urgencia real si existe ([N] lugares)."
 };
 const MAX_PIECES = 12;
@@ -267,7 +269,7 @@ REGLAS QUE NO SE NEGOCIAN
 - Se muestra el QUÉ (qué hay que cambiar, por qué importa y qué pasa cuando lo tienes), NUNCA el CÓMO (plantillas, pasos exactos, herramientas, guiones, fórmulas). Si alguien pudiera implementarlo solo con la pieza, diste demasiado.
 - Una sola invitación (CTA) clara, desde la identidad y el permiso, nunca desde la presión ni la culpa.
 
-EMBUDO Y CTAs. No todo cierra en venta. Mix: 70 % valor (guardar, compartir, seguir, comentar, lead magnet, enlace a otra pieza), 20-25 % medio del embudo (vulnerabilidad, historia, opinión; CTA de conversación, clase gratuita, análisis de caso o lista de espera), 5 % venta directa. Las piezas se enlazan entre sí: un carrusel lleva a un reel viejo ("ya grabé un reel sobre esto, comentá REEL y te lo mando"), un reel a un video de YouTube ("comentá VIDEO"), el video a un lead magnet, el lead magnet a la conversación de venta. Cada video de YouTube también es un artículo de blog.
+EMBUDO Y CTAs. No todo cierra en venta. Vender sin que se note: el cuerpo de la pieza ya vende (espejo, prueba, diferencia), así que el CTA no tiene que repetirlo; la audiencia tiene que sentir que le das, no que le vendés. Mix: 70 % valor (guardar, compartir, seguir, comentar, lead magnet, enlace a otra pieza), 20-25 % mentalidad / conexión (vulnerabilidad, historia, opinión; CTA de conversación, clase gratuita, análisis de caso o lista de espera), 5 % venta (sutil casi siempre; directa solo en aperturas de cupos). Las piezas se enlazan entre sí: un carrusel lleva a un reel viejo ("ya grabé un reel sobre esto, comentá REEL y te lo mando"), un reel a un video de YouTube ("comentá VIDEO"), el video a un lead magnet, el lead magnet a la conversación de venta. Cada video de YouTube también es un artículo de blog.
 Lead magnets (uno por dolor): LM1 Test "¿atraés curiosas o compradoras?" (DIAGNÓSTICO) · LM2 Guía "las 4 decisiones de un negocio de vida Pinterest" (LIBERTAD) · LM3 Clase gratuita "por qué te estancás antes de los 5k", que puede ser un video de YouTube (CLASE) · LM4 Mini guía "los 5 tipos de contenido que venden" (CONTENIDO) · LM5 Test "¿sos una más o sos referente?" (REFERENTE) · LM6 Video "una cuenta antes y después de 90 días" (CASO).
 
 AUDIENCIA. Mujeres con marca personal o profesional (coaches, terapeutas, nutricionistas, diseñadoras, consultoras, abogadas, etc.), buenas en lo que hacen pero invisibles; facturan entre 0 y 3k/mes; ya probaron cursos y plantillas. Miedo secreto: "¿y si el problema soy yo?". Deseo secreto: que la elijan sin tener que convencer. Deciden por emoción: primero se sienten vistas, después se permiten desear y al final buscan razones.
@@ -304,19 +306,22 @@ Entrega:
 - Título y 2 ideas de miniatura.
 - Escaleta por bloques con tiempos aproximados: apertura con el sueño (0 a 30 segundos), bloques de vida real con lo que se ve y lo que se dice (voz en off o a cámara), un **momento vulnerable** a cámara (sin música, honesto), un **momento de emoción real**, el bloque de método/diferencia (el qué) y el cierre con CTA. Marca el viaje emocional con los íconos.
 - Guion de la versión corta.`,
-  "yt-mentalidad": `FORMATO: VIDEO DE YOUTUBE DE MENTALIDAD (10 a 20 minutos).
+  "yt-mentalidad": `FORMATO: VIDEO DE YOUTUBE DE MENTALIDAD (unos 20 minutos).
 Entrega:
 - Título (y 2 alternativas) y 2 ideas de miniatura.
 - Guion por secciones con tiempos: 1) Hook con el sueño (0 a 30 segundos), 2) Promesa del video, 3) **Momento espejo** largo con su monólogo interno, 4) La creencia oculta que causa el dolor, 5) Historia/prueba completa, 6) La nueva creencia y por qué mi enfoque es distinto, 7) El QUÉ (qué cambiar, sin el cómo), 8) **Frase de identidad** que ella quiera repetirse, 9) CTA.
-- Escribe los fragmentos clave palabra por palabra (hook, espejo, alivio, frase de identidad, CTA) y el resto como puntos desarrollados.`,
-  "yt-tips": `FORMATO: VIDEO DE YOUTUBE DE TIPS / "PASO A PASO" (8 a 15 minutos).
+- Para cada sección: el rango de tiempo (por ejemplo 1:30–5:00) que sume unos 20 minutos en total, y en bullets los temas a hablar en esa parte. Tiempos de referencia: hook 0:00–0:30, promesa 0:30–1:30, espejo 1:30–5:00, creencia oculta 5:00–8:00, historia 8:00–11:30, nueva creencia 11:30–15:00, el QUÉ 15:00–18:00, frase de identidad 18:00–19:00, CTA 19:00–20:00.
+- Escribí palabra por palabra solo el hook, la frase de identidad y el CTA. El resto, en bullets para hablar sin guion.`,
+  "yt-tips": `FORMATO: VIDEO DE YOUTUBE DE TIPS / "PASO A PASO" (unos 20 minutos).
 Importante: parece un paso a paso, pero cada paso es un QUÉ, nunca un CÓMO. El espectador termina con claridad y con ganas de implementación guiada.
 Entrega:
 - Título (y 2 alternativas) y 2 ideas de miniatura.
 - Hook con el sueño (palabra por palabra), dolor de 1 minuto.
 - 3 a 5 pasos. Cada paso con: qué es, por qué importa, error común, qué pasa cuando lo haces bien, y un dato o caso con métrica para la clienta analítica.
 - 30 segundos a cámara en tono personal antes del cierre ("no tienes que hacerlo sola").
-- Cierre emocional y CTA.`
+- Cierre emocional y CTA.
+- Para cada sección: el rango de tiempo que sume unos 20 minutos en total, y en bullets los temas a hablar. Tiempos de referencia: hook 0:00–0:30, promesa 0:30–1:30, dolor 1:30–3:30, pasos 3:30–15:30 repartidos en partes iguales, caso con métricas 15:30–17:00, a cámara personal 17:00–18:00, resumen 18:00–19:00, cierre y CTA 19:00–20:00.
+- Escribí palabra por palabra solo el hook, el momento a cámara y el CTA. El resto, en bullets.`
 };
 const PROFILE_GUIDE = {
   intuitiva: "PERFIL: 💗 Intuitiva (coach, terapeuta, creativa). Confía cuando se siente comprendida: más historia, escenas, vulnerabilidad, testimonios emocionales y lifestyle. Datos solo si suman a la historia.",
@@ -468,7 +473,7 @@ ${PROFILE_GUIDE[p.profile]}
 ${CTA_GUIDE[p.cta||"auto"]}
 
 SALIDA
-- Markdown limpio. Empezá con un título "## " con el nombre de la pieza. Debajo del título, una línea con **Etapa del embudo:** (🟢 Valor, 🟡 Medio o 🔴 Venta) y el tipo de CTA. No escribas introducciones ni comentarios hacia mí antes o después de la pieza.
+- Markdown limpio. Empezá con un título "## " con el nombre de la pieza. Debajo del título, una línea con **Etapa del embudo:** (🟢 Valor, 🟡 Mentalidad / conexión o 🔴 Venta) y el tipo de CTA. Después del CTA principal agregá "🔁 Otros CTAs para elegir" con dos alternativas de las otras etapas (por ejemplo 🟡 mentalidad y 🔴 venta sutil), para que yo elija. No escribas introducciones ni comentarios hacia mí antes o después de la pieza.
 - Al final agregá "### Checklist" con 5 líneas cortas que confirmen: sueño en el hook, dolor + monólogo interno, prueba, el qué sin el cómo, CTA acorde a la etapa del embudo.`;
 }
 
@@ -488,7 +493,7 @@ function pieceEl(p){
   const el=document.createElement("article"); el.className="piece"; el.id="p-"+p.id;
   const st = p.status==="run"?`<span class="badge st-run">Escribiendo</span>`:p.status==="wait"?`<span class="badge st-run">En cola</span>`:p.status==="err"?`<span class="badge st-err">Incompleta</span>`:"";
   el.innerHTML=`<div class="piece-head"><div style="min-width:0;flex:1 1 280px">
-      <div class="meta"><span class="badge fmt">${esc(fmtName(p.format))}</span><span class="badge">${esc(profName(p.profile))}</span><span class="badge">${esc({auto:"CTA automático",valor:"🟢 Valor",medio:"🟡 Medio",venta:"🔴 Venta"}[p.cta||"auto"])}</span><span class="badge">${esc(DOLORES[p.d]?.n||"")}</span>${st}</div>
+      <div class="meta"><span class="badge fmt">${esc(fmtName(p.format))}</span><span class="badge">${esc(profName(p.profile))}</span><span class="badge">${esc({auto:"CTA automático",valor:"🟢 Valor",medio:"🟡 Mentalidad",sutil:"🔴 Venta sutil",venta:"🔴 Venta directa"}[p.cta||"auto"])}</span><span class="badge">${esc(DOLORES[p.d]?.n||"")}</span>${st}</div>
       <div class="hk">${esc(clean(p.hook))}</div></div>
     <div class="piece-actions">
       <button class="btn ghost" data-a="copy" type="button" ${p.text?"":"disabled"}>Copiar</button>

@@ -7,12 +7,38 @@ No todo cierra en venta. Si cada pieza termina en "escribime para comprar", la a
 | Etapa | % del contenido | Qué busca | CTAs que usa |
 |---|---|---|---|
 | 🟢 **Valor** (arriba del embudo) | **70 %** | Que te guarde, te comparta, te siga, consuma más contenido tuyo y deje su contacto. | Guardar · compartir · seguir · comentar · **lead magnet** · **enlace a otro contenido** (reel viejo, video de YouTube, blog). |
-| 🟡 **Medio del embudo** (conexión) | **20–25 %** | Que te conozca: tu historia, tu vulnerabilidad, tus opiniones, los casos de tus clientas. Que empiece a hablar con vos. | Contame en comentarios · respondeme por DM (charla, no venta) · lead magnet más profundo (clase, análisis de caso) · lista de espera. |
+| 🟡 **Mentalidad / conexión** (medio del embudo) | **20–25 %** | Que te conozca: tu historia, tu vulnerabilidad, tus opiniones, los casos de tus clientas. Que empiece a hablar con vos. | Contame en comentarios · respondeme por DM (charla, no venta) · lead magnet más profundo (clase, análisis de caso) · lista de espera. |
 | 🔴 **Venta directa** | **5 %** | Que compre. | Aplicá · escribime QUIERO · quedan [N] lugares. |
 
 > Regla práctica: de cada 20 piezas del feed, **14 son de valor, 5 de medio y 1 de venta**. Las historias pueden cargar más venta en los días de apertura de cupos.
 
-## 2. Banco de CTAs (en argentino)
+## 2. Vender sin que se note
+
+La idea es que la audiencia sienta que le estás dando, no que le estás vendiendo. La venta pasa sola, por debajo:
+
+- **El cuerpo de cada pieza ya vende:** el espejo, la prueba y la diferencia muestran que sos la solución. El CTA no necesita repetirlo.
+- **Las historias de clientas venden mejor que cualquier "comprá":** quien las ve se imagina en su lugar.
+- **El método aparece como contexto, no como oferta:** "esto es lo que trabajo con mis clientas", "lo primero que hacemos en [TU MÉTODO]".
+- **La venta sutil invita a charlar, no a comprar:** "escribime y lo charlamos", "te cuento cómo trabajo". La venta se cierra en la conversación privada, no en el post.
+- **Los lead magnets y los enlaces hacen el trabajo pesado:** quien comenta VIDEO o CLASE consume más contenido tuyo, sube de conciencia y llega sola al DM.
+- **La venta directa queda para las aperturas de cupos**, y sobre todo en historias.
+
+## 3. Cómo elegir el CTA de cada pieza
+
+Cada guion trae un **CTA sugerido** y **dos alternativas**. Elegí según para qué querés esa pieza esa semana:
+
+| Querés… | Elegí |
+|---|---|
+| Que te descubran, te guarden y te compartan | 🟢 Valor |
+| Que dejen su contacto | 🟢 Valor con lead magnet |
+| Que consuman más contenido tuyo | 🟢 Valor con enlace (REEL, VIDEO, NÚMEROS) |
+| Que te conozcan, opinen y te escriban | 🟡 Mentalidad / conexión |
+| Que empiecen una conversación de venta sin sentirse presionadas | 🔴 Venta sutil |
+| Que compren ya (apertura de cupos) | 🔴 Venta directa |
+
+> Para llevar la cuenta: en el calendario anotá qué CTA usaste en cada pieza. Si en una semana hay más de 1 venta en el feed, cambiá alguna a valor.
+
+## 4. Banco de CTAs (en argentino)
 
 ### 🟢 Valor
 - **Guardar:** "Guardalo para cuando te sientes a crear contenido."
@@ -25,18 +51,22 @@ No todo cierra en venta. Si cada pieza termina en "escribime para comprar", la a
 - **Carrusel:** "Hice un carrusel donde lo explico con números. Comentá NÚMEROS y te lo mando."
 - **Blog:** "Lo escribí completo en el blog. Link en mi bio."
 
-### 🟡 Medio del embudo
+### 🟡 Mentalidad / conexión
 - **Opinión:** "¿Estás de acuerdo o me vas a odiar? Te leo en comentarios."
 - **Conversación por DM:** "Si te pasó algo parecido, contámelo por DM. Leo todos los mensajes."
 - **Clase o lead magnet profundo:** "Comentá CLASE y te mando la clase gratuita donde te explico por qué te estancás antes de los 5k."
 - **Caso completo:** "Analicé el antes y el después completo de [CLIENTA] en YouTube. Comentá CASO y te lo mando."
 - **Lista de espera:** "Estoy armando algo para esto. Si querés enterarte primero, comentá LISTA."
 
-### 🔴 Venta
+### 🔴 Venta sutil (para cuando querés vender sin que se sienta)
+- "Esto es justo lo que trabajo con mis clientas. Si querés que lo miremos en tu caso, escribime [PALABRA] y lo charlamos."
+- "Si querés hacerlo acompañada, escribime [PALABRA] y te cuento cómo trabajo."
+
+### 🔴 Venta directa (solo en aperturas de cupos)
 - "Abro [N] lugares de [TU MÉTODO]. Si sentís que es para vos, escribime QUIERO."
 - "Aplicá en el link de mi bio. Quedan [N] lugares."
 
-## 3. Lead magnets (para crear después)
+## 5. Lead magnets (para crear después)
 
 Un lead magnet por dolor. Algunos **son directamente un video de YouTube** (no hay que crear nada nuevo, solo mandar el link). Acá sí podés dar un poquito más de profundidad, pero el cómo completo sigue dentro del programa.
 
@@ -51,7 +81,7 @@ Un lead magnet por dolor. Algunos **son directamente un video de YouTube** (no h
 
 **Blog:** cada video de YouTube se convierte en un artículo (la transcripción editada). Sirve para posicionarte en Google y como destino de los CTAs "lo escribí completo en el blog".
 
-## 4. Mapa de enlaces: cómo se conecta todo
+## 6. Mapa de enlaces: cómo se conecta todo
 
 ```
  CARRUSEL ──"comentá REEL"──▶ REEL VIEJO ──"comentá VIDEO"──▶ YOUTUBE ──▶ LEAD MAGNET ──▶ DM / LISTA ──▶ VENTA
