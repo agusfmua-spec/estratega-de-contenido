@@ -19,16 +19,16 @@ Estructura de cada video:
 ---
 
 ## Video 1 · "La libertad no llega después del éxito (y por eso nunca llega)" — Dolor 2
-- **Momento espejo:** *"Te sientas a almorzar con tu familia y la cabeza sigue en el negocio. Te vas a dormir pensando en lo que no publicaste."* **Frase de identidad:** *"Yo no me tengo que ganar el descanso."*
-- **Título:** *Por qué todavía no vives la vida que guardaste en Pinterest*
-- **Miniatura:** tú relajada + texto "NO ES DISCIPLINA".
-- **Hook:** "Hay mujeres que viven de su marca personal, trabajan 4 horas al día y viajan cuando quieren. No son más disciplinadas que tú. Creen algo distinto."
+- **Momento espejo:** *"Te sentás a almorzar con tu familia y la cabeza sigue en el negocio. Te vas a dormir pensando en lo que no publicaste."* **Frase de identidad:** *"Yo no me tengo que ganar el descanso."*
+- **Título:** *Por qué todavía no vivís la vida que guardaste en Pinterest*
+- **Miniatura:** vos relajada + texto "NO ES DISCIPLINA".
+- **Hook:** "Hay mujeres que viven de su marca personal, trabajan 4 horas al día y viajan cuando quieren. No son más disciplinadas que vos. Creen algo distinto."
 - **Dolor:** emprender para ser libre → trabajar más que nunca → culpa por descansar → "cuando facture más, me relajo".
 - **Creencia oculta:** "Primero sacrificio, después libertad."
 - **Prueba:** [TU HISTORIA]: el momento en que te diste cuenta de que el "después" nunca llegaba.
 - **Nueva creencia:** "La libertad se diseña desde el día uno, en el modelo del negocio."
-- **El QUÉ:** 3 decisiones de un negocio libre: qué vendes, a quién, y qué sistema trabaja sin ti.
-- **CTA:** "Si quieres diseñarlo conmigo, aplica en el link."
+- **El QUÉ:** 3 decisiones de un negocio libre: qué vendés, a quién, y qué sistema trabaja sin vos.
+- **CTA:** "Si querés diseñarlo conmigo, aplicá en el link."
 - ⏱️ **Estructura de 20 minutos (qué hablar y cuánto):**
   - **0:00–0:30 · Hook (sueño):** el hook tal cual + imagen de un martes libre (café, sol, buscar a los chicos al cole).
   - **0:30–1:30 · Promesa y quién sos:** qué se va a llevar del video · por qué podés hablar de esto (tu cambio en una frase).
@@ -43,8 +43,8 @@ Estructura de cada video:
 
 ## Video 2 · "No te falta creatividad, te falta esto" — Dolor 4
 - **Momento espejo:** grabar, borrar, compararte, sentir que todas lo hacen fácil. **Frase de identidad:** *"Mi voz no necesita ser perfecta, necesita ser clara."*
-- **Título:** *Si odias crear contenido, mira esto*
-- **Hook:** "Imagina sentarte a crear y que las ideas te sobren. Mis clientas viven así. Y ninguna era 'creativa'."
+- **Título:** *Si odiás crear contenido, mirá esto*
+- **Hook:** "Imaginate sentarte a crear y que las ideas te sobren. Mis clientas viven así. Y ninguna era 'creativa'."
 - **Dolor:** bloqueo, comparación, horas editando, posts sin respuesta, *"quizás no sirvo para esto"*.
 - **Creencia oculta:** "El contenido es un tema de creatividad/constancia."
 - **Prueba:** caso de [CLIENTA] que pasó de bloqueo a [RESULTADO].
@@ -64,8 +64,8 @@ Estructura de cada video:
 - 🔁 **CTA a elección:** 🟢 Valor: "En la descripción tenés la mini guía gratis de los 5 tipos de contenido que venden" (LM4) · 🟡 Mentalidad / conexión: "Contame qué es lo que más te frena a la hora de crear" · 🔴 Venta sutil: "Si querés armar tu mensaje conmigo, escribime MENSAJE por Instagram".
 
 ## Video 3 · "Por qué 5k al mes te parece imposible (y no lo es)" — Dolor 3
-- **Momento espejo:** el miedo de fin de mes, la idea de "volver a un trabajo", sentir que dependes de alguien. **Frase de identidad:** *"Mi independencia es una decisión, no un golpe de suerte."*
-- **Título:** *La verdadera razón por la que no facturas 5k con tu marca personal*
+- **Momento espejo:** el miedo de fin de mes, la idea de "volver a un trabajo", sentir que dependés de alguien. **Frase de identidad:** *"Mi independencia es una decisión, no un golpe de suerte."*
+- **Título:** *La verdadera razón por la que no facturás 5k con tu marca personal*
 - **Hook:** "Hay marcas con 2.000 seguidores facturando 10k al mes. Y otras con 50.000 que no llegan a 1.000."
 - **Dolor:** montaña rusa de ingresos, miedo a subir precios, *"no puedo cobrar eso"*.
 - **Creencia oculta:** "Más ingresos = más clientas = más trabajo."
@@ -87,8 +87,8 @@ Estructura de cada video:
 
 ## Video 4 · "El síndrome de la experta invisible" — Dolor 5
 - **Momento espejo:** la envidia que da culpa, sentirse injustamente invisible. **Frase de identidad:** *"No necesito saber más para ser vista. Necesito animarme."*
-- **Título:** *Sabes más que ellas, pero ellas crecen. Esto es lo que pasa.*
-- **Hook:** "Imagina que en tu nicho, cuando alguien pregunta *'¿quién es la mejor en esto?'*, digan tu nombre."
+- **Título:** *Sabés más que ellas, pero ellas crecen. Esto es lo que pasa.*
+- **Hook:** "Imaginate que en tu nicho, cuando alguien pregunta *'¿quién es la mejor en esto?'*, digan tu nombre."
 - **Dolor:** ver a otras crecer con menos experiencia, sentir injusticia, esconderse detrás de "todavía no estoy lista".
 - **Creencia oculta:** "La autoridad se gana sabiendo más."
 - **Prueba:** clienta que se volvió referente.
@@ -107,14 +107,14 @@ Estructura de cada video:
   - **19:00–20:00 · CTA + próximo video.**
 - 🔁 **CTA a elección:** 🟢 Valor: "En la descripción tenés el test gratis: ¿sos una más o sos referente?" (LM5) · 🟡 Mentalidad / conexión: "Dejame en comentarios una opinión impopular sobre tu nicho" · 🔴 Venta sutil: "Si querés construir tu postura conmigo, escribime REFERENTE por Instagram".
 
-## Video 5 · "Atraes a quien no te va a comprar (y no es tu culpa)" — Dolor 1
+## Video 5 · "Atraés a quien no te va a comprar (y no es tu culpa)" — Dolor 1
 - **Momento espejo:** la humillación silenciosa de tener que convencer y justificar el precio. **Frase de identidad:** *"Yo no convenzo. A mí me eligen."*
 - **Título:** *Por qué te piden el precio y desaparecen*
 - **Hook:** "Así se siente tener una agenda llena de clientas que no regatean y que llegaron ya convencidas."
 - **Dolor:** DMs de "info", llamadas que no cierran, descuentos, desgaste emocional de convencer.
 - **Creencia oculta:** "Necesito más alcance / aportar más valor gratis."
 - **Prueba:** caso con tasa de cierre antes/después.
-- **Nueva creencia:** "Tu contenido decide a quién atraes. Regalar el cómo atrae a quien solo quiere gratis."
+- **Nueva creencia:** "Tu contenido decide a quién atraés. Regalar el cómo atrae a quien solo quiere gratis."
 - **El QUÉ:** contenido por niveles de conciencia; mostrar el qué y vender el cómo.
 - **CTA:** aplicación.
 - ⏱️ **Estructura de 20 minutos (qué hablar y cuánto):**

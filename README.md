@@ -24,7 +24,7 @@ Y sobre tres reglas que no se negocian:
 
 👉 **https://claude.ai/artifact/GhL3RY1c6ZZuPYJRwN2fF5**
 
-Un tablero con los 60 hooks. Eliges los hooks que te gustan, marcas el formato (reel, carrusel, historias, vlog, YouTube de mentalidad o de tips) y el perfil de clienta (💗 Intuitiva, 🧠 Analítica o mixto), y la página arma cada pieza con toda la estrategia. Carga tus datos (método, casos, historia) una sola vez y se usan en todas las piezas. El código está en `app/fabrica-de-contenido.html`.
+Un tablero con los 60 hooks. Elegís los hooks que te gustan, marcás el formato (reel, carrusel, historias, vlog, YouTube de mentalidad o de tips) y el perfil de clienta (💗 Intuitiva, 🧠 Analítica o mixto), y la página arma cada pieza con toda la estrategia. Cargá tus datos (método, casos, historia) una sola vez y se usan en todas las piezas. El código está en `app/fabrica-de-contenido.html`.
 
 ## Estructura
 
@@ -48,7 +48,7 @@ contenido/
 
 ## Cómo personalizarlo
 
-Busca y reemplaza estos marcadores con tu información real:
+Buscá y reemplazá estos marcadores con tu información real:
 
 - `[TU MÉTODO]` → el nombre de tu método/programa (ej.: *Método Marca Magnética*).
 - `[CLIENTA]` / `[CLIENTE]` → nombre (o iniciales) de un caso real, con su permiso.
@@ -56,4 +56,4 @@ Busca y reemplaza estos marcadores con tu información real:
 - `[TU HISTORIA]` → tu propio punto de quiebre (de dónde venías / dónde estás).
 - `[CTA]` → tu llamado a la acción (palabra clave por DM, link en bio, aplicación, etc.).
 
-> ⚠️ Usa solo resultados y testimonios reales. La prueba social inventada destruye exactamente lo que este sistema construye: confianza.
+> ⚠️ Usá solo resultados y testimonios reales. La prueba social inventada destruye exactamente lo que este sistema construye: confianza.

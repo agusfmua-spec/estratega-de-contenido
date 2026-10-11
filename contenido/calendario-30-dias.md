@@ -20,16 +20,16 @@ Cada semana tiene un **dolor protagonista**, y la semana 4 es de **apertura de c
 | Lun | Reel 4 · "Contenido que vende solo" | Secuencia 2 · Diagnóstico | — |
 | Mar | Carrusel 4 · "Lo que ya probaste" | Detrás de escena del día | YouTube Mentalidad 2 · "No te falta creatividad" |
 | Mié | Reel 1 · "DMs que ya vienen vendidos" | Caja de preguntas sobre contenido | — |
-| Jue | Carrusel 7 · "Señales de que atraes curiosas" | Respuestas a la caja | — |
-| Vie | Reel 10 · "El problema no eres tú" | Lifestyle (sueño) | — |
-| Sáb | 🧠 RT2 · "El dato que explica por qué no vendes" | Secuencia 1 · "Mi vida Pinterest" | Vlog 4 · "Un mes de contenido en una mañana" |
+| Jue | Carrusel 7 · "Señales de que atraés curiosas" | Respuestas a la caja | — |
+| Vie | Reel 10 · "El problema no sos vos" | Lifestyle (sueño) | — |
+| Sáb | 🧠 RT2 · "El dato que explica por qué no vendés" | Secuencia 1 · "Mi vida Pinterest" | Vlog 4 · "Un mes de contenido en una mañana" |
 | Dom | — | Reflexión + encuesta | — |
 
 ## Semana 2
 | Día | Feed | Historias | YouTube / Vlog |
 |---|---|---|---|
 | Lun | Reel 3 · "Mis primeros 5k" | Slider de cercanía a 5k | — |
-| Mar | Carrusel 3 · "Por qué te estancas antes de los 5k" | Detrás de escena | 🧠 YouTube Tips 1 · "4 pasos para facturar 5k" |
+| Mar | Carrusel 3 · "Por qué te estancás antes de los 5k" | Detrás de escena | 🧠 YouTube Tips 1 · "4 pasos para facturar 5k" |
 | Mié | 🧠 RT1 · "La matemática de los 5k" | Secuencia 3 · "Detrás de un mes de 5k+" | — |
 | Jue | Carrusel 6 · "Caso real" | Secuencia 4 · Caso en tiempo real | — |
 | Vie | Reel 13 · "Caso de éxito narrado" | Lifestyle | — |
@@ -65,4 +65,4 @@ Cada semana tiene un **dolor protagonista**, y la semana 4 es de **apertura de c
 - **Guardados y compartidos** > likes.
 - **Retención** de YouTube en el minuto 2 (si cae ahí, el dolor no está bien nombrado).
 - **Respuestas emocionales** en comentarios y DMs ("me hiciste llorar", "me leíste la mente"): son la señal de que el espejo funciona.
-- **Qué perfil compra más**: anota si cada clienta nueva llegó por una pieza 💗 o 🧠 y ajusta la mezcla 70/30.
+- **Qué perfil compra más**: anotá si cada clienta nueva llegó por una pieza 💗 o 🧠 y ajustá la mezcla 70/30.

@@ -10,19 +10,19 @@ Por eso **cada pieza es un viaje emocional**, no una explicación. Y por eso tam
 
 ```
  ANHELO  →  ESPEJO  →  ALIVIO  →  ESPERANZA  →  CONFIANZA  →  DECISIÓN
- (sueño)    (dolor)    (no eres tú) (prueba)     (diferencia)   (CTA)
+ (sueño)    (dolor)    (no sos vos) (prueba)     (diferencia)   (CTA)
 ```
 
-| Momento | Lo que ella siente | Lo que tú haces | Frase tipo |
+| Momento | Lo que ella siente | Lo que vos hacés | Frase tipo |
 |---|---|---|---|
-| **1. Anhelo** (hook) | "Eso quiero yo." Un pinchazo de deseo. | Pintas una escena sensorial de su vida deseada. | "Imagina cerrar la laptop un jueves a las 3 de la tarde, ir a buscar a tus hijos, y saber que el mes ya está facturado." |
-| **2. Espejo** (dolor) | "Me está hablando a mí." Se le hace un nudo en la garganta. | Describes su escena real y **su monólogo interno**, con palabras que ella nunca dijo en voz alta. | "Y esa vocecita que a las 11 de la noche te dice: *'¿y si el problema soy yo?'*" |
-| **3. Alivio** | Le sacas una mochila de encima. Respira. | Le quitas la culpa: no es ella, es la estrategia que le dieron. | "No eres tú. Nunca fuiste tú. Te dieron un mapa equivocado." |
-| **4. Esperanza** (prueba) | "Si ella pudo, yo también." | Cuentas una historia de una mujer como ella, con emociones, no solo números. | "[CLIENTA] me lo dijo llorando en nuestra primera llamada. Tres meses después me mandó esta foto desde [LUGAR]." |
-| **5. Confianza** (diferencia) | "Esto es distinto, esta vez puede funcionar." | Contrastas con lo que ya intentó y le muestras el QUÉ. | "No te voy a pedir que hagas más. Te voy a pedir que hagas distinto." |
-| **6. Decisión** (CTA) | Permiso para elegirse. | Invitas desde la identidad, no desde la presión. | "Si algo de esto te movió, no es casualidad. Escríbeme." |
+| **1. Anhelo** (hook) | "Eso quiero yo." Un pinchazo de deseo. | Pintás una escena sensorial de su vida deseada. | "Imaginate cerrar la laptop un jueves a las 3 de la tarde, ir a buscar a tus hijos, y saber que el mes ya está facturado." |
+| **2. Espejo** (dolor) | "Me está hablando a mí." Se le hace un nudo en la garganta. | Describís su escena real y **su monólogo interno**, con palabras que ella nunca dijo en voz alta. | "Y esa vocecita que a las 11 de la noche te dice: *'¿y si el problema soy yo?'*" |
+| **3. Alivio** | Le sacás una mochila de encima. Respira. | Le quitás la culpa: no es ella, es la estrategia que le dieron. | "No sos vos. Nunca fuiste vos. Te dieron un mapa equivocado." |
+| **4. Esperanza** (prueba) | "Si ella pudo, yo también." | Contás una historia de una mujer como ella, con emociones, no solo números. | "[CLIENTA] me lo dijo llorando en nuestra primera llamada. Tres meses después me mandó esta foto desde [LUGAR]." |
+| **5. Confianza** (diferencia) | "Esto es distinto, esta vez puede funcionar." | Contrastás con lo que ya intentó y le mostrás el QUÉ. | "No te voy a pedir que hagas más. Te voy a pedir que hagas distinto." |
+| **6. Decisión** (CTA) | Permiso para elegirse. | Invitás desde la identidad, no desde la presión. | "Si algo de esto te movió, no es casualidad. Escribime." |
 
-> **Regla:** si una pieza no le provoca al menos **una emoción física** (nudo en la garganta, piel de gallina, una sonrisa, "uf, eso me pasa"), vuelve a escribirla.
+> **Regla:** si una pieza no le provoca al menos **una emoción física** (nudo en la garganta, piel de gallina, una sonrisa, "uf, eso me pasa"), volvé a escribirla.
 
 ---
 
@@ -42,17 +42,17 @@ El dolor es lo que ella cuenta. La emoción es lo que **no** cuenta. El contenid
 
 ## 3. Herramientas para emocionar (sin caer en lo cursi)
 
-1. **Escenas, no conceptos.** No digas "falta de tiempo": di "comer parada frente al celular contestando un DM mientras tu hija te muestra un dibujo".
-2. **El monólogo interno.** Pon en palabras lo que ella piensa y nunca dijo: *"¿Quién me creo para cobrar eso?"*. Es lo que más genera la sensación de "me leíste la mente" (prueba 1).
-3. **Vulnerabilidad con propósito.** Comparte tu momento más bajo, pero siempre como puente hacia la solución, nunca como queja.
-4. **Dar permiso.** Permiso para querer más, para cobrar más, para descansar, para desear la vida de Pinterest sin culpa. *"Está bien querer más. No eres ambiciosa de más: estás desaprovechada."*
+1. **Escenas, no conceptos.** No digas "falta de tiempo": decí "comer parada frente al celular contestando un DM mientras tu hija te muestra un dibujo".
+2. **El monólogo interno.** Poné en palabras lo que ella piensa y nunca dijo: *"¿Quién me creo para cobrar eso?"*. Es lo que más genera la sensación de "me leíste la mente" (prueba 1).
+3. **Vulnerabilidad con propósito.** Compartí tu momento más bajo, pero siempre como puente hacia la solución, nunca como queja.
+4. **Dar permiso.** Permiso para querer más, para cobrar más, para descansar, para desear la vida de Pinterest sin culpa. *"Está bien querer más. No sos ambiciosa de más: estás desaprovechada."*
 5. **Identidad, no tareas.** Hablale a quién se convierte, no a lo que tiene que hacer: *"la mujer que no se justifica"*, *"la que elige con quién trabaja"*.
 6. **Detalles sensoriales del sueño.** El olor del café, la luz de la mañana, el sonido de la notificación de pago, el abrazo de los hijos a la salida del colegio.
 7. **Historias de mujeres reales.** Las emociones de tus clientas (la llamada en la que lloró, el mensaje de "¡lo logré!") valen más que cualquier cifra sola.
 8. **Ritmo.** Frases cortas en el espejo. Pausa antes del alivio. Voz más suave en el alivio, más firme en la decisión.
 
 ### Palabras que activan
-`elegirte` · `merecer` · `permiso` · `tranquilidad` · `volver a ti` · `respirar` · `orgullo` · `ser vista` · `sin culpa` · `liviana` · `tu voz` · `tu tiempo` · `independencia`
+`elegirte` · `merecer` · `permiso` · `tranquilidad` · `volver a vos` · `respirar` · `orgullo` · `ser vista` · `sin culpa` · `liviana` · `tu voz` · `tu tiempo` · `independencia`
 
 ### Palabras a evitar (enfrían o presionan)
 `hackear` · `escalar` (en piezas emocionales) · `funnel` · `KPI` · `grind` · `no seas floja` · `excusas` · cualquier tono de culpa o vergüenza hacia ella.
@@ -70,14 +70,14 @@ Todas compran por emoción, pero no todas *confían* de la misma manera.
 | **Qué la frena** | Miedo a exponerse, a no ser suficiente. | Desconfianza: "¿otra gurú más que vende humo?" |
 | **Qué necesita ver** | Testimonios emocionales, tu historia, lifestyle. | Números, casos con métricas, estructura del método, diagnósticos. |
 | **Formatos favoritos** | Reels de historia, vlogs, historias íntimas. | Carruseles con datos, YouTube de tips, análisis de casos. |
-| **CTA que le funciona** | "Si esto te movió, escríbeme." | "Si quieres ver si aplica a tu caso, aplica al diagnóstico." |
+| **CTA que le funciona** | "Si esto te movió, escribime." | "Si querés ver si aplica a tu caso, aplicá al diagnóstico." |
 
 ### Mezcla del contenido
 - **70 %** emocional (arco completo).
 - **30 %** técnico, **que igual empieza con el sueño y termina con emoción**. Lo técnico es el cuerpo, no el hook ni el cierre.
 
 ### Cómo es el contenido técnico (sin regalar el cómo)
-Muestra **la lógica, los datos y el diagnóstico**, no las herramientas:
+Mostrá **la lógica, los datos y el diagnóstico**, no las herramientas:
 
 | ✅ Técnico permitido (el QUÉ con datos) | ❌ Regalar el cómo |
 |---|---|

@@ -4,19 +4,19 @@ Videos de **~20 minutos**. Cada video trae su estructura con tiempos y los temas
 
 ⚠️ **Regla de oro:** estos videos *parecen* paso a paso, pero cada paso es un **QUÉ** (qué hacer y por qué), nunca un **CÓMO** (la herramienta, plantilla o ejercicio exacto). El espectador termina con claridad y con ganas de implementación guiada.
 
-Fórmula por paso: **Qué es → Por qué importa → Error común → Qué pasa cuando lo haces bien → (el cómo lo trabajamos en [TU MÉTODO])**.
+Fórmula por paso: **Qué es → Por qué importa → Error común → Qué pasa cuando lo hacés bien → (el cómo lo trabajamos en [TU MÉTODO])**.
 
-> 🧠💗 **Estos videos son para la Analítica**, pero igual empiezan con el sueño y terminan con emoción. Para cada paso: un dato o un caso con métrica (ver también [contenido-tecnico.md](contenido-tecnico.md)). Antes del cierre, 30 segundos a cámara en tono personal: *"Sé que puede parecer mucho. Por eso no tienes que hacerlo sola."*
+> 🧠💗 **Estos videos son para la Analítica**, pero igual empiezan con el sueño y terminan con emoción. Para cada paso: un dato o un caso con métrica (ver también [contenido-tecnico.md](contenido-tecnico.md)). Antes del cierre, 30 segundos a cámara en tono personal: *"Sé que puede parecer mucho. Por eso no tenés que hacerlo sola."*
 
 > ⏱️ **Duración:** ~20 minutos. Cada video tiene abajo su estructura con **tiempos** y los **temas a hablar** en cada parte, en bullets, para grabar sin guion palabra por palabra. Y trae su **CTA a elección** (🟢 valor, 🟡 mentalidad / conexión o 🔴 venta sutil).
 
 ---
 
 ## Video 1 · "Los 4 pasos para que tu marca personal facture 5k al mes" — Dolor 3
-- **Dato para la Analítica:** 5.000 = 4 clientas × 1.250 o 10 × 500 o 50 × 100: mostrar qué vida tiene cada opción. **Cierre emocional:** *"Elige el número que te deje vivir."*
+- **Dato para la Analítica:** 5.000 = 4 clientas × 1.250 o 10 × 500 o 50 × 100: mostrar qué vida tiene cada opción. **Cierre emocional:** *"Elegí el número que te deje vivir."*
 - **Hook:** "Así se ve tu primer mes de 5k: 4 o 5 clientas, cero persecución y una agenda que te deja vivir."
 - **Dolor (1 min):** el estancamiento entre 1.500 y 3.000.
-- **Paso 1 · Posicionamiento:** *qué:* definir por qué eres la única opción. *Error:* describir lo que haces, no la transformación.
+- **Paso 1 · Posicionamiento:** *qué:* definir por qué sos la única opción. *Error:* describir lo que hacés, no la transformación.
 - **Paso 2 · Oferta de alto valor:** *qué:* una oferta que no se compare por precio. *Error:* tener 7 servicios baratos.
 - **Paso 3 · Contenido que vende:** *qué:* contenido para cada nivel de conciencia. *Error:* solo contenido educativo.
 - **Paso 4 · Sistema de conversión:** *qué:* un camino claro de seguidora a clienta. *Error:* depender del DM manual.
@@ -38,12 +38,12 @@ Fórmula por paso: **Qué es → Por qué importa → Error común → Qué pasa
 
 ## Video 2 · "Cómo dejar de atraer leads fríos: 3 cambios en tu contenido" — Dolor 1
 - **Dato para la Analítica:** % de DMs con intención de compra antes/después de [CLIENTA]. **Cierre emocional:** *"Que te elijan se siente distinto que convencer."*
-- **Hook:** "Imagina que la próxima persona que te escriba ya haya decidido comprarte."
+- **Hook:** "Imaginate que la próxima persona que te escriba ya haya decidido comprarte."
 - **Cambio 1:** *qué:* dejar de hablarle a quien no sabe que tiene el problema. *Por qué:* ahí nacen los "¿precio?".
 - **Cambio 2:** *qué:* mostrar el qué, vender el cómo. *Por qué:* regalar el cómo atrae a quien quiere todo gratis.
 - **Cambio 3:** *qué:* incluir prueba y diferencia en cada pieza. *Por qué:* la confianza se construye antes del DM.
 - **Prueba:** tasa de cierre de [CLIENTA] antes/después.
-- **CTA:** "Si quieres que revise tu contenido, aplica."
+- **CTA:** "Si querés que revise tu contenido, aplicá."
 - ⏱️ **Estructura de 20 minutos (qué hablar y cuánto):**
   - **0:00–0:30 · Hook (sueño):** el hook: que la próxima persona que te escriba ya haya decidido comprarte.
   - **0:30–1:30 · Promesa:** "3 cambios en tu contenido para dejar de atraer curiosas".
@@ -82,12 +82,12 @@ Fórmula por paso: **Qué es → Por qué importa → Error común → Qué pasa
 
 ## Video 4 · "5 señales de que estás a un cambio de ser referente en tu nicho" — Dolor 5
 - **Dato para la Analítica:** invitaciones, menciones o recomendaciones antes/después de un caso. **Cierre emocional:** *"Tu experiencia merece ser vista."*
-- **Hook:** "Imagina que otras profesionales de tu nicho te citen y te recomienden."
+- **Hook:** "Imaginate que otras profesionales de tu nicho te citen y te recomienden."
 - **Señales (cada una = un qué):**
   1. Tus clientas tienen resultados, pero nadie fuera lo sabe → falta prueba visible.
-  2. Tienes opiniones fuertes que no publicas → falta postura.
-  3. Te comparas con otras → falta diferenciación.
-  4. Explicas lo que haces de 5 formas distintas → falta mensaje central.
+  2. Tenés opiniones fuertes que no publicás → falta postura.
+  3. Te comparás con otras → falta diferenciación.
+  4. Explicás lo que hacés de 5 formas distintas → falta mensaje central.
   5. Tu contenido podría ser de cualquiera del nicho → falta voz propia.
 - **Prueba:** clienta que pasó de invisible a referente.
 - **CTA:** DM REFERENTE.
@@ -109,13 +109,13 @@ Fórmula por paso: **Qué es → Por qué importa → Error común → Qué pasa
 ## Video 5 · "Diseña tu negocio de 'vida Pinterest' en 4 decisiones" — Dolor 2
 - **Dato para la Analítica:** horas trabajadas vs. facturación antes/después (tuya o de una clienta). **Cierre emocional:** *"Tu vida no es lo que queda después del trabajo."*
 - **Hook:** "Martes 11 a. m., café, sol, y tu negocio facturando. Estas son las 4 decisiones detrás."
-- **Decisión 1 · Cuánto quieres trabajar** (antes de cuánto quieres facturar).
-- **Decisión 2 · Cuántas clientas necesitas** para tu número (y a qué precio).
-- **Decisión 3 · Qué parte de tu negocio no debería depender de ti.**
-- **Decisión 4 · Qué contenido vende mientras vives.**
+- **Decisión 1 · Cuánto querés trabajar** (antes de cuánto querés facturar).
+- **Decisión 2 · Cuántas clientas necesitás** para tu número (y a qué precio).
+- **Decisión 3 · Qué parte de tu negocio no debería depender de vos.**
+- **Decisión 4 · Qué contenido vende mientras vivís.**
 - Por cada decisión: qué es, por qué casi nadie la toma y qué pasa cuando la tomas. *(Sin calculadoras, plantillas ni herramientas.)*
 - **Prueba:** tu propia agenda antes/después.
-- **CTA:** "Si quieres tomar estas decisiones con acompañamiento, aplica a [TU MÉTODO]."
+- **CTA:** "Si querés tomar estas decisiones con acompañamiento, aplicá a [TU MÉTODO]."
 - ⏱️ **Estructura de 20 minutos (qué hablar y cuánto):**
   - **0:00–0:30 · Hook (sueño):** el hook: martes 11 a. m., café, sol y tu negocio facturando.
   - **0:30–1:30 · Promesa:** "las 4 decisiones detrás de un negocio de vida Pinterest".

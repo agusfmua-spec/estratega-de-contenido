@@ -5,54 +5,54 @@ Hasta 12 slides (contando la slide emocional extra). Una idea por slide.
 
 > 🎯 **CTAs a elección:** cada carrusel trae un CTA sugerido y dos alternativas (🟢 valor, 🟡 mentalidad / conexión, 🔴 venta sutil). Las slides no cambian, solo la última (ver [05-ctas-y-embudo.md](../estrategia/05-ctas-y-embudo.md)).
 
-> 💗 **Capa emocional:** cada carrusel recorre anhelo (portada) → espejo (slides de dolor, con su monólogo interno entre comillas) → alivio ("no eres tú") → esperanza (caso) → confianza (el qué) → decisión (CTA). Una slide de alivio es **obligatoria**: es la que más se guarda y se comparte.
+> 💗 **Capa emocional:** cada carrusel recorre anhelo (portada) → espejo (slides de dolor, con su monólogo interno entre comillas) → alivio ("no sos vos") → esperanza (caso) → confianza (el qué) → decisión (CTA). Una slide de alivio es **obligatoria**: es la que más se guarda y se comparte.
 
 ---
 
 ## Carrusel 1 · "Clientas que llegan listas para pagar" — Dolor 1
-- **Viaje emocional:** dignidad. Slide extra después de la 4: *"Y cada vez que alguien te deja en visto, te preguntas si vales lo que cobras. Vales. 🫂"* · Perfil 💗
+- **Viaje emocional:** dignidad. Slide extra después de la 4: *"Y cada vez que alguien te deja en visto, te preguntás si valés lo que cobrás. Valés. 🫂"* · Perfil 💗
 1. **Portada:** "Así se ve tu negocio cuando tus clientas llegan listas para pagar 👇"
 2. "Ningún *'¿precio?'*. Ningún *'lo pienso y te aviso'*. Solo: *'¿cómo entro?'*"
 3. "Pero hoy tu realidad es otra: muchos mensajes, pocas ventas."
-4. "Y te dijeron que es un tema de alcance. Que necesitas más seguidores."
-5. "La verdad: no necesitas más gente. Tu contenido le habla a gente que todavía no sabe que te necesita."
+4. "Y te dijeron que es un tema de alcance. Que necesitás más seguidores."
+5. "La verdad: no necesitás más gente. Tu contenido le habla a gente que todavía no sabe que te necesita."
 6. "Eso se llama atraer leads de baja conciencia. Y ningún curso de reels te lo va a resolver."
 7. **Prueba:** "[CLIENTA]: de 20 DMs sin ventas a [RESULTADO]." (captura)
 8. **El QUÉ:** "Lo que cambiamos: el nivel de conciencia al que le habla su contenido."
 9. "Cuando tu contenido filtra, tu DM se convierte en caja registradora."
-10. **CTA (🟢 Valor · lead magnet LM1):** "Comenta DIAGNÓSTICO y te mando el test gratis para ver si atraes curiosas o compradoras."
-   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Te pasó de sentir que tenías que convencer a alguien para que te compre? Cuéntame." · 🔴 Venta sutil: "Si quieres que revisemos tu contenido juntas, escríbeme FILTRO."
+10. **CTA (🟢 Valor · lead magnet LM1):** "Comentá DIAGNÓSTICO y te mando el test gratis para ver si atraés curiosas o compradoras."
+   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Te pasó de sentir que tenías que convencer a alguien para que te compre? Contame." · 🔴 Venta sutil: "Si querés que revisemos tu contenido juntas, escribime FILTRO."
 
 ## Carrusel 2 · "Tu tablero de Pinterest es un plan, no un sueño" — Dolor 2
-- **Viaje emocional:** reencuentro. Slide extra después de la 4: *"Y lo que más duele no es el cansancio. Es sentir que te perdiste a ti misma en el camino."* · Perfil 💗
+- **Viaje emocional:** reencuentro. Slide extra después de la 4: *"Y lo que más duele no es el cansancio. Es sentir que te perdiste a vos misma en el camino."* · Perfil 💗
 1. **Portada:** "Ese tablero de Pinterest que guardaste no es un sueño. Es un plan al que le falta estrategia."
 2. "Departamento luminoso. Viajes. Agenda con pocos turnos, bien pagados. Un martes libre."
 3. "Emprendiste por eso."
-4. "Y hoy trabajas más que en relación de dependencia. Con un jefe peor: tu celular."
+4. "Y hoy trabajás más que en relación de dependencia. Con un jefe peor: tu celular."
 5. "No es falta de disciplina. Es que construiste un negocio que depende 100 % de tu presencia."
 6. **Prueba:** "Yo estuve ahí: [TU HISTORIA]. Hoy: [RESULTADO]."
 7. **Diferencia:** "Lo que no funcionó: trabajar más. Lo que sí: diseñar el negocio para la vida que quiero."
-8. **El QUÉ:** "3 cosas que tiene un negocio de 'vida Pinterest': oferta de alto valor, contenido que vende solo, y un sistema que no depende de ti."
-9. **CTA (🟢 Valor · enlace a reel):** "Guárdalo. Y si quieres ver cómo se ve un martes así, ya grabé un reel: comenta REEL y te lo mando." *(Enlaza al Reel 2.)*
-   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Qué tiene tu tablero de Pinterest? Cuéntamelo en comentarios." · 🔴 Venta sutil: "Si quieres convertir ese tablero en un plan, escríbeme PINTEREST y te cuento cómo trabajo."
+8. **El QUÉ:** "3 cosas que tiene un negocio de 'vida Pinterest': oferta de alto valor, contenido que vende solo, y un sistema que no depende de vos."
+9. **CTA (🟢 Valor · enlace a reel):** "Guardalo. Y si querés ver cómo se ve un martes así, ya grabé un reel: comentá REEL y te lo mando." *(Enlaza al Reel 2.)*
+   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Qué tiene tu tablero de Pinterest? Contámelo en comentarios." · 🔴 Venta sutil: "Si querés convertir ese tablero en un plan, escribime PINTEREST y te cuento cómo trabajo."
 
-## Carrusel 3 · "Por qué te estancas antes de los 5k" — Dolor 3
-- **Viaje emocional:** seguridad y orgullo. Slide extra después de la 2: *"Si a fin de mes piensas 'quizás debería volver a un trabajo', este carrusel es para ti."* · Perfil 💗🧠
+## Carrusel 3 · "Por qué te estancás antes de los 5k" — Dolor 3
+- **Viaje emocional:** seguridad y orgullo. Slide extra después de la 2: *"Si a fin de mes pensás 'quizás debería volver a un trabajo', este carrusel es para vos."* · Perfil 💗🧠
 1. **Portada:** "Hay marcas con 2.000 seguidores facturando 10k al mes. Esto es lo que hacen distinto."
 2. "Y no, no es suerte ni algoritmo."
-3. "Si hoy te estancas entre 1.500 y 3.000, probablemente…"
+3. "Si hoy te estancás entre 1.500 y 3.000, probablemente…"
 4. "…tu oferta es parecida a la de 100 personas más."
 5. "…tu precio está pensado para no espantar."
 6. "…tu contenido educa, pero no vende."
 7. **Diferencia:** "La solución de siempre: más clientas. La real: mejor posicionamiento."
 8. **Prueba:** "[CLIENTA] pasó de [X] a [RESULTADO] con 3 clientas nuevas, no 30."
 9. **El QUÉ:** "5k no es un número de volumen. Es un número de posicionamiento."
-10. **CTA (🟢 Valor · clase gratuita LM3):** "Grabé una clase gratuita sobre esto. Comenta CLASE y te la mando." *(Enlaza a YouTube Tips 1.)*
-   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿En qué número te sientes estancada hoy? Te leo." · 🔴 Venta sutil: "Escríbeme 5K y te cuento cómo trabajamos el posicionamiento en [TU MÉTODO]."
+10. **CTA (🟢 Valor · clase gratuita LM3):** "Grabé una clase gratuita sobre esto. Comentá CLASE y te la mando." *(Enlaza a YouTube Tips 1.)*
+   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿En qué número te sentís estancada hoy? Te leo." · 🔴 Venta sutil: "Escribime 5K y te cuento cómo trabajamos el posicionamiento en [TU MÉTODO]."
 
 ## Carrusel 4 · "Lo que ya probaste (y por qué no funcionó)" — Dolor 4, contraste
 - **Viaje emocional:** alivio. Slide extra después de la 5: *"Hiciste todo bien. Lo que te enseñaron estaba incompleto. No es tu culpa."* · Perfil 💗
-1. **Portada:** "Imagina crear contenido 3 veces por semana y que cada post traiga conversaciones de venta."
+1. **Portada:** "Imaginate crear contenido 3 veces por semana y que cada post traiga conversaciones de venta."
 2. "Ya probaste publicar todos los días. ❌"
 3. "Ya probaste tendencias y audios virales. ❌"
 4. "Ya compraste plantillas de Canva. ❌"
@@ -60,20 +60,20 @@ Hasta 12 slides (contando la slide emocional extra). Una idea por slide.
 6. "Todo eso te enseñó a *hacer* contenido. Nada te enseñó a *ser elegida*."
 7. **Diferencia:** "En [TU MÉTODO] el orden es otro: posicionamiento → mensaje → contenido."
 8. **Prueba:** testimonio en captura.
-9. **CTA (🟢 Valor · comentar):** "¿Cuál de todas probaste? Cuéntame en comentarios 👇"
-   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Cuál te dejó más frustrada? Cuéntamelo, no estás sola." · 🔴 Venta sutil: "Si quieres hacerlo con un orden, escríbeme ORDEN y te cuento cómo."
+9. **CTA (🟢 Valor · comentar):** "¿Cuál de todas probaste? Contame en comentarios 👇"
+   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Cuál te dejó más frustrada? Contámelo, no estás sola." · 🔴 Venta sutil: "Si querés hacerlo con un orden, escribime ORDEN y te cuento cómo."
 
 ## Carrusel 5 · "Cómo piensa una referente" — Dolor 5
-- **Viaje emocional:** reconocimiento. Slide extra después de la 6: *"Esa envidia que a veces sientes no es mala: es tu deseo diciéndote que tú también puedes."* · Perfil 💗
-1. **Portada:** "Las referentes de tu nicho no saben más que tú. Piensan distinto."
-2. "Tú: *'tengo que saber más antes de mostrarme'*. Ella: *'tengo que tener una postura'*."
-3. "Tú: *'publico lo que se usa'*. Ella: *'publico lo que creo'*."
-4. "Tú: *'quiero gustarle a todos'*. Ella: *'quiero que me elijan las correctas'*."
-5. "Tú: *'compito por precio'*. Ella: *'no tengo competencia'*."
-6. **Dolor:** "Si te sientes invisible teniendo más experiencia que otras, no es injusticia. Es comunicación."
+- **Viaje emocional:** reconocimiento. Slide extra después de la 6: *"Esa envidia que a veces sentís no es mala: es tu deseo diciéndote que vos también podés."* · Perfil 💗
+1. **Portada:** "Las referentes de tu nicho no saben más que vos. Piensan distinto."
+2. "Vos: *'tengo que saber más antes de mostrarme'*. Ella: *'tengo que tener una postura'*."
+3. "Vos: *'publico lo que se usa'*. Ella: *'publico lo que creo'*."
+4. "Vos: *'quiero gustarle a todos'*. Ella: *'quiero que me elijan las correctas'*."
+5. "Vos: *'compito por precio'*. Ella: *'no tengo competencia'*."
+6. **Dolor:** "Si te sentís invisible teniendo más experiencia que otras, no es injusticia. Es comunicación."
 7. **Prueba:** "[CLIENTA]: [RESULTADO de autoridad, ej. invitada a 3 podcasts en 2 meses]."
 8. **CTA (🟡 Medio · opinión):** "¿Con cuál te identificaste? ¿Y cuál te dio un poquito de bronca? Te leo 👇"
-   - 🔁 **Otros CTAs para elegir:** 🟢 Valor: "Guárdalo y sígueme para más." · 🔴 Venta sutil: "Si quieres construir tu postura conmigo, escríbeme REFERENTE."
+   - 🔁 **Otros CTAs para elegir:** 🟢 Valor: "Guardalo y seguime para más." · 🔴 Venta sutil: "Si querés construir tu postura conmigo, escribime REFERENTE."
 
 ## Carrusel 6 · "Caso real: de 1.800 a 6.200" — Prueba
 - **Viaje emocional:** esperanza. Contar la escena de la primera llamada (cómo se sentía, qué dijo) y la última (qué hizo con su primer mes de 5k). · Perfil 💗🧠
@@ -86,20 +86,20 @@ Hasta 12 slides (contando la slide emocional extra). Una idea por slide.
 7. "3. Su contenido atraía a la gente equivocada."
 8. "Trabajamos esas 3 con [TU MÉTODO]. Resultado: [RESULTADO]."
 9. "Su frase hoy: *'[testimonio real]'*."
-10. **CTA (🟡 Medio · caso completo LM6):** "Analicé su cuenta completa en un video de YouTube. Comenta CASO y te lo mando."
-   - 🔁 **Otros CTAs para elegir:** 🟢 Valor: "Guárdalo para cuando necesites recordar que se puede." · 🔴 Venta sutil: "¿Quieres ser el próximo caso? Escríbeme CASO."
+10. **CTA (🟡 Medio · caso completo LM6):** "Analicé su cuenta completa en un video de YouTube. Comentá CASO y te lo mando."
+   - 🔁 **Otros CTAs para elegir:** 🟢 Valor: "Guardalo para cuando necesites recordar que se puede." · 🔴 Venta sutil: "¿Querés ser el próximo caso? Escribime CASO."
 
 ## Carrusel 7 · "Señales de que tu contenido atrae curiosas" — Dolor 1 + 4
 - **Viaje emocional:** ser vista. Cerrar con: *"Si marcaste varias, no estás sola. Le pasa a casi todas las mujeres que llegan a mí."* · Perfil 💗
-1. **Portada:** "Imagina que cada seguidora nueva sea una clienta potencial. Para eso, revisa esto 👇"
+1. **Portada:** "Imaginate que cada seguidora nueva sea una clienta potencial. Para eso, revisá esto 👇"
 2. "Te preguntan el precio y desaparecen."
 3. "Tus posts más vistos son los que menos venden."
 4. "Te piden *'tips gratis'* por DM."
-5. "Te dicen *'me encanta lo que haces'* pero no compran."
-6. "Te sientes obligada a explicar tu precio."
-7. "Si marcaste 3 o más, no necesitas más contenido. Necesitas otro contenido."
-8. **CTA (🟢 Valor · comentar + reel):** "Comenta cuántas marcaste. Y si fueron 3 o más, comenta REEL y te mando el reel donde te cuento qué cambiar." *(Enlaza al Reel 1.)*
-   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Cuál te dolió más leer? Cuéntame." · 🔴 Venta sutil: "Si marcaste 3 o más, escríbeme FILTRO y vemos tu caso."
+5. "Te dicen *'me encanta lo que hacés'* pero no compran."
+6. "Te sentís obligada a explicar tu precio."
+7. "Si marcaste 3 o más, no necesitás más contenido. Necesitás otro contenido."
+8. **CTA (🟢 Valor · comentar + reel):** "Comentá cuántas marcaste. Y si fueron 3 o más, comentá REEL y te mando el reel donde te cuento qué cambiar." *(Enlaza al Reel 1.)*
+   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Cuál te dolió más leer? Contame." · 🔴 Venta sutil: "Si marcaste 3 o más, escribime FILTRO y vemos tu caso."
 
 ## Carrusel 8 · "Mi semana de 20 horas" — Dolor 2, lifestyle
 - **Viaje emocional:** libertad. Mostrar momentos con nombre propio en la agenda ("buscar a Sofi", "yoga", "almuerzo con mamá"). · Perfil 💗
@@ -109,5 +109,5 @@ Hasta 12 slides (contando la slide emocional extra). Una idea por slide.
 4. "Lo que cambió no fue mi disciplina. Fue mi modelo."
 5. **El QUÉ:** "Una oferta de alto valor + contenido que trabaja por mí + un sistema."
 6. "Esto es lo que construyo con mis clientas en [TU MÉTODO]."
-7. **CTA (🟢 Valor · lead magnet LM2):** "Comenta LIBERTAD y te mando la guía con las 4 decisiones de un negocio que te deja vivir."
-   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Cómo sería tu semana ideal? Cuéntamela." · 🔴 Venta sutil: "Escríbeme LIBERTAD y te cuento cómo diseñamos tu semana en [TU MÉTODO]."
+7. **CTA (🟢 Valor · lead magnet LM2):** "Comentá LIBERTAD y te mando la guía con las 4 decisiones de un negocio que te deja vivir."
+   - 🔁 **Otros CTAs para elegir:** 🟡 Mentalidad / conexión: "¿Cómo sería tu semana ideal? Contámela." · 🔴 Venta sutil: "Escribime LIBERTAD y te cuento cómo diseñamos tu semana en [TU MÉTODO]."

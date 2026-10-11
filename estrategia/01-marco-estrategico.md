@@ -6,7 +6,7 @@ Antes de publicar cualquier cosa, la pieza tiene que pasar este filtro. Si no cu
 
 | Prueba | Pregunta de control | Cómo se ve en el contenido |
 |---|---|---|
-| **1. Entiendo tu problema mejor que tú** | ¿Nombré algo que ella siente pero nunca supo poner en palabras? | Describir la escena exacta: el domingo a la noche sin ideas, el DM que dice "¿precio?" y desaparece, el reel con 10k vistas y cero ventas. Nombrar la **causa invisible**, no el síntoma. |
+| **1. Entiendo tu problema mejor que vos** | ¿Nombré algo que ella siente pero nunca supo poner en palabras? | Describir la escena exacta: el domingo a la noche sin ideas, el DM que dice "¿precio?" y desaparece, el reel con 10k vistas y cero ventas. Nombrar la **causa invisible**, no el síntoma. |
 | **2. Ya lo resolví** | ¿Hay prueba (mía o de una clienta) de que esto tiene solución? | Casos con antes/después, capturas, números, mi propia historia. "A [CLIENTA] le pasaba exactamente esto…" |
 | **3. Mi forma es distinta** | ¿Quedó claro por qué lo que ya intentó no funcionó y lo mío sí? | Contrastar contra lo que ya probó: postear todos los días, copiar tendencias, cursos de Canva, "aporta valor", bajar precios, hacer más lives. |
 
@@ -18,7 +18,7 @@ La audiencia describe el **síntoma**. Mi trabajo es mostrar la **causa** (eso e
 - **Lo que ella dice:** "Me escriben, pero solo preguntan el precio y desaparecen." / "Me piden descuento." / "Quieren todo gratis."
 - **Lo que realmente pasa:** su contenido habla a gente que todavía no sabe que tiene un problema. Atrae curiosos, no compradores. Su contenido educa *al nivel equivocado de conciencia*.
 - **Creencia a romper:** "Necesito más seguidores / más alcance."
-- **Verdad que instalo:** No necesitas más gente. Necesitas que la gente correcta llegue *ya convencida*.
+- **Verdad que instalo:** No necesitás más gente. Necesitás que la gente correcta llegue *ya convencida*.
 - **El sueño:** clientas que llegan diciendo "ya te sigo hace meses, ¿cómo entro?" sin pedir descuento.
 
 ### Dolor 2 · No logra crear su vida de tablero de Pinterest
