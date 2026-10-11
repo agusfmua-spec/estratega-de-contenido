@@ -1,11 +1,14 @@
 # Carruseles · 8 carruseles slide por slide
 
 Estructura: **Portada = sueño** → slides 2–4 dolor → slide de prueba → slide de diferencia → slides del QUÉ → CTA.
-Máx. 10 slides. Una idea por slide.
+Hasta 12 slides (contando la slide emocional extra). Una idea por slide.
+
+> 💗 **Capa emocional:** cada carrusel recorre anhelo (portada) → espejo (slides de dolor, con su monólogo interno entre comillas) → alivio ("no eres tú") → esperanza (caso) → confianza (el qué) → decisión (CTA). Una slide de alivio es **obligatoria**: es la que más se guarda y se comparte.
 
 ---
 
 ## Carrusel 1 · "Clientas que llegan listas para pagar" — Dolor 1
+- **Viaje emocional:** dignidad. Slide extra después de la 4: *"Y cada vez que alguien te deja en visto, te preguntas si vales lo que cobras. Vales. 🫂"* · Perfil 💗
 1. **Portada:** "Así se ve tu negocio cuando tus clientas llegan listas para pagar 👇"
 2. "Ningún *'¿precio?'*. Ningún *'lo pienso y te aviso'*. Solo: *'¿cómo entro?'*"
 3. "Pero hoy tu realidad es otra: muchos mensajes, pocas ventas."
@@ -18,6 +21,7 @@ Máx. 10 slides. Una idea por slide.
 10. **CTA:** "Escríbeme FILTRO y te cuento cómo lo hacemos en [TU MÉTODO]."
 
 ## Carrusel 2 · "Tu tablero de Pinterest es un plan, no un sueño" — Dolor 2
+- **Viaje emocional:** reencuentro. Slide extra después de la 4: *"Y lo que más duele no es el cansancio. Es sentir que te perdiste a ti misma en el camino."* · Perfil 💗
 1. **Portada:** "Ese tablero de Pinterest que guardaste no es un sueño. Es un plan al que le falta estrategia."
 2. "Departamento luminoso. Viajes. Agenda con pocos turnos, bien pagados. Un martes libre."
 3. "Emprendiste por eso."
@@ -29,6 +33,7 @@ Máx. 10 slides. Una idea por slide.
 9. **CTA:** "Guárdalo y escríbeme PINTEREST."
 
 ## Carrusel 3 · "Por qué te estancas antes de los 5k" — Dolor 3
+- **Viaje emocional:** seguridad y orgullo. Slide extra después de la 2: *"Si a fin de mes piensas 'quizás debería volver a un trabajo', este carrusel es para ti."* · Perfil 💗🧠
 1. **Portada:** "Hay marcas con 2.000 seguidores facturando 10k al mes. Esto es lo que hacen distinto."
 2. "Y no, no es suerte ni algoritmo."
 3. "Si hoy te estancas entre 1.500 y 3.000, probablemente…"
@@ -41,6 +46,7 @@ Máx. 10 slides. Una idea por slide.
 10. **CTA:** "Escríbeme 5K."
 
 ## Carrusel 4 · "Lo que ya probaste (y por qué no funcionó)" — Dolor 4, contraste
+- **Viaje emocional:** alivio. Slide extra después de la 5: *"Hiciste todo bien. Lo que te enseñaron estaba incompleto. No es tu culpa."* · Perfil 💗
 1. **Portada:** "Imagina crear contenido 3 veces por semana y que cada post traiga conversaciones de venta."
 2. "Ya probaste publicar todos los días. ❌"
 3. "Ya probaste tendencias y audios virales. ❌"
@@ -52,6 +58,7 @@ Máx. 10 slides. Una idea por slide.
 9. **CTA:** "Comenta ORDEN y te escribo."
 
 ## Carrusel 5 · "Cómo piensa una referente" — Dolor 5
+- **Viaje emocional:** reconocimiento. Slide extra después de la 6: *"Esa envidia que a veces sientes no es mala: es tu deseo diciéndote que tú también puedes."* · Perfil 💗
 1. **Portada:** "Las referentes de tu nicho no saben más que tú. Piensan distinto."
 2. "Tú: *'tengo que saber más antes de mostrarme'*. Ella: *'tengo que tener una postura'*."
 3. "Tú: *'publico lo que se usa'*. Ella: *'publico lo que creo'*."
@@ -62,6 +69,7 @@ Máx. 10 slides. Una idea por slide.
 8. **CTA:** "Guárdalo y sígueme para más."
 
 ## Carrusel 6 · "Caso real: de 1.800 a 6.200" — Prueba
+- **Viaje emocional:** esperanza. Contar la escena de la primera llamada (cómo se sentía, qué dijo) y la última (qué hizo con su primer mes de 5k). · Perfil 💗🧠
 1. **Portada:** "[CLIENTA] pasó de [X] a [RESULTADO]/mes. Sin ganar seguidores."
 2. "Cuando llegó: agotada, publicando todos los días, con DMs de *'¿precio?'*."
 3. "Me dijo: *'siento que el problema soy yo'*."
@@ -74,6 +82,7 @@ Máx. 10 slides. Una idea por slide.
 10. **CTA:** "¿Quieres ser el próximo caso? Escríbeme CASO."
 
 ## Carrusel 7 · "Señales de que tu contenido atrae curiosas" — Dolor 1 + 4
+- **Viaje emocional:** ser vista. Cerrar con: *"Si marcaste varias, no estás sola. Le pasa a casi todas las mujeres que llegan a mí."* · Perfil 💗
 1. **Portada:** "Imagina que cada seguidora nueva sea una clienta potencial. Para eso, revisa esto 👇"
 2. "Te preguntan el precio y desaparecen."
 3. "Tus posts más vistos son los que menos venden."
@@ -84,6 +93,7 @@ Máx. 10 slides. Una idea por slide.
 8. **CTA:** "Comenta cuántas marcaste."
 
 ## Carrusel 8 · "Mi semana de 20 horas" — Dolor 2, lifestyle
+- **Viaje emocional:** libertad. Mostrar momentos con nombre propio en la agenda ("buscar a Sofi", "yoga", "almuerzo con mamá"). · Perfil 💗
 1. **Portada:** "Mi semana laboral de 20 horas que factura [RESULTADO]."
 2. "Lunes: estrategia y clientas. Martes: libre hasta el mediodía…" (agenda visual)
 3. "Hace [X] años: 60 horas, ingresos inestables, culpa si no publicaba."

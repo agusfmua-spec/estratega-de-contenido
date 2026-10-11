@@ -5,7 +5,12 @@ Toda pieza (de 15 segundos o de 20 minutos) sigue el mismo esqueleto:
 ```
 SUEÑO  →  DOLOR  →  PRUEBA  →  DIFERENCIA  →  QUÉ (no cómo)  →  INVITACIÓN
 (hook)    (prueba 1) (prueba 2)  (prueba 3)
+
+ANHELO →  ESPEJO + ALIVIO → ESPERANZA → CONFIANZA ──────────────→ DECISIÓN
+                       (el viaje emocional que ella vive)
 ```
+
+Cada paso de la fórmula tiene **una emoción que provocar** (ver [04-viaje-emocional.md](04-viaje-emocional.md)). La fórmula es el esqueleto; la emoción es lo que la hace sentir que la estás viendo.
 
 ## 1. SUEÑO (Hook · sell the dream)
 Pinta el resultado deseado como algo **posible, concreto y sensorial**. Nunca abras con el problema.
@@ -21,14 +26,14 @@ Reglas del hook:
 
 ## 2. DOLOR (Prueba 1 · te entiendo mejor que tú)
 El giro: *"…pero hoy tu realidad es otra."*
-Describe la escena actual con detalles que solo alguien que lo vivió conoce. Después nombra la **causa invisible**.
+Describe la escena actual con detalles que solo alguien que lo vivió conoce, **pon en palabras su monólogo interno** y después nombra la **causa invisible**. Cierra con **alivio**: no es ella.
 
-> "Publicas, te esfuerzas, tienes un reel que se hace viral… y te llegan 30 mensajes preguntando el precio. Ninguno compra. Y empiezas a pensar que el problema eres tú. No eres tú. Es que tu contenido le está hablando a gente que todavía no sabe que te necesita."
+> "Publicas, te esfuerzas, tienes un reel que se hace viral… y te llegan 30 mensajes preguntando el precio. Ninguno compra. Y a la noche, con el celular en la mano, aparece esa vocecita: *'¿y si el problema soy yo?'*. No eres tú. Es que tu contenido le está hablando a gente que todavía no sabe que te necesita."
 
 ## 3. PRUEBA (Prueba 2 · ya lo resolví)
-Un caso breve, una cifra, una captura o tu propia historia.
+Un caso breve, una cifra, una captura o tu propia historia. **Cuéntalo con emoción, no solo con números:** cómo se sentía ella antes y cómo se siente ahora. Para el perfil analítico, suma el dato duro.
 
-> "[CLIENTA] estaba exactamente ahí. En [TIEMPO] pasó a [RESULTADO]."
+> "[CLIENTA] estaba exactamente ahí. En nuestra primera llamada me dijo que estaba pensando en dejarlo todo. En [TIEMPO] pasó a [RESULTADO], y lo primero que hizo fue llevar a su mamá de viaje."
 
 ## 4. DIFERENCIA (Prueba 3 · mi forma es otra)
 Contrasta con lo que ya intentó.
@@ -53,14 +58,20 @@ Siempre una sola acción, coherente con el nivel de conciencia de la pieza:
 - Tibio/caliente → "Escríbeme **MARCA** por DM y te cuento cómo lo hacemos."
 - Caliente → "Aplica en el link de mi bio, quedan [N] lugares."
 
+Invita **desde la identidad y el permiso**, nunca desde la presión o la culpa: *"Si algo de esto te movió, no es casualidad. Es tu señal."*
+
 ---
 
 ## Checklist antes de publicar
 
 - [ ] ¿El hook vende el sueño (no el problema)?
+- [ ] ¿La pieza provoca al menos una emoción física (nudo, piel de gallina, sonrisa, "uf, me pasa")?
+- [ ] ¿Puse en palabras su monólogo interno?
+- [ ] ¿Hay un momento de alivio ("no eres tú")?
 - [ ] ¿Nombré el dolor con más precisión de la que ella lo nombraría?
 - [ ] ¿Hay prueba (caso, número, historia)?
 - [ ] ¿Quedó claro por qué lo que intentó antes no funcionó?
 - [ ] ¿Mostré el QUÉ sin regalar el CÓMO?
 - [ ] ¿Hay una sola invitación clara?
 - [ ] ¿Esta pieza atrae compradoras o solo curiosas?
+- [ ] ¿Es para la Intuitiva o para la Analítica? ¿Le di a esa mujer lo que necesita para confiar?

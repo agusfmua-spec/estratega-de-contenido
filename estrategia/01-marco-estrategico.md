@@ -59,6 +59,10 @@ La audiencia describe el **síntoma**. Mi trabajo es mostrar la **causa** (eso e
 - Tiene guardado un tablero de Pinterest con: laptop en la playa, departamento luminoso, agenda con pocos turnos y bien pagados, viajes.
 - **Su miedo secreto:** "¿Y si el problema soy yo?"
 - **Su deseo secreto:** que la elijan sin tener que convencer a nadie.
+- **Cómo decide:** por emoción. Primero se siente vista, después se permite desear, y recién al final busca razones. Por eso cada pieza es un viaje emocional (ver [04-viaje-emocional.md](04-viaje-emocional.md)).
+- **Dos perfiles dentro del mismo avatar:**
+  - 💗 **La Intuitiva:** confía cuando se siente comprendida (historias, vulnerabilidad, lifestyle).
+  - 🧠 **La Analítica:** confía cuando entiende la lógica (datos, casos con métricas, estructura del método). Para ella está el [contenido técnico](../contenido/contenido-tecnico.md).
 
 ## 4. Mi mecanismo único: `[TU MÉTODO]`
 
@@ -86,13 +90,15 @@ Estructura sugerida en 4 fases (nómbralas a tu manera):
 
 ## 5. Pilares de contenido (mix semanal)
 
-| Pilar | % | Objetivo | Prueba del precepto que trabaja |
-|---|---|---|---|
-| **Sueño / Visión** | 20 % | Deseo, aspiración, lifestyle | Diferencia (muestra el destino) |
-| **Dolor / Diagnóstico** | 30 % | "Me leíste la mente" | Prueba 1 |
-| **Prueba / Casos** | 20 % | Credibilidad | Prueba 2 |
-| **Método / Contraste** | 20 % | Autoridad y diferenciación | Prueba 3 |
-| **Detrás de escena / Yo** | 10 % | Conexión y confianza | Las 3 |
+| Pilar | % | Objetivo | Emoción que despierta | Prueba del precepto que trabaja |
+|---|---|---|---|---|
+| **Sueño / Visión** | 20 % | Deseo, aspiración, lifestyle | Anhelo | Diferencia (muestra el destino) |
+| **Dolor / Espejo** | 25 % | "Me leíste la mente" | Ser vista + alivio | Prueba 1 |
+| **Historias de transformación** | 15 % | Credibilidad emocional | Esperanza | Prueba 2 |
+| **Detrás de escena / Yo** | 10 % | Conexión y confianza | Cercanía | Las 3 |
+| **Técnico: datos, casos con métricas, método** | 30 % | Confianza racional para la Analítica | Seguridad | Pruebas 2 y 3 |
+
+> 70 % emocional / 30 % técnico. Incluso el técnico abre con el sueño y cierra con emoción.
 
 ## 6. Niveles de conciencia (para no atraer más leads fríos)
 

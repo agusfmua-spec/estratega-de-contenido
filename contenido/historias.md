@@ -3,9 +3,12 @@
 Cada secuencia: 5–9 historias. La primera es **el sueño** (lo que frena el pulgar), luego interacción, dolor, prueba, diferencia, CTA.
 Usa stickers: encuesta, caja de preguntas, slider, link.
 
+> 💗 **Capa emocional:** las historias son el formato más íntimo. Habla a cámara como si fuera un audio a una amiga, muestra tu cara sin filtro en el espejo y el alivio, y usa las respuestas de ellas para que se sientan acompañadas ("muchas me escribieron lo mismo, no estás sola").
+
 ---
 
 ## Secuencia 1 · "Un día en mi vida de tablero de Pinterest" — Dolor 2 (lifestyle + venta suave)
+- **Viaje emocional:** anhelo → culpa → reencuentro. Agregar entre la 3 y la 4 una historia a cámara: *"Me acuerdo de un día en que mi hija me dijo 'mamá, siempre estás con el celular'. Ese día algo se rompió."* (o tu versión real). · Perfil 💗
 1. Video: café al sol. Texto: "11:00 a. m. de un martes. Ya facturé en la semana lo que antes en un mes."
 2. Encuesta: "¿Tu martes se parece a esto? 🙋‍♀️ Sí / 😩 Ni cerca"
 3. "Si votaste *ni cerca*: hace [X] años yo también. Respondía DMs a medianoche."
@@ -15,6 +18,7 @@ Usa stickers: encuesta, caja de preguntas, slider, link.
 7. Caja de preguntas: "¿Qué te frena hoy para tener tu martes libre?"
 
 ## Secuencia 2 · "Diagnóstico: ¿atraes curiosas o compradoras?" — Dolor 1 (interacción)
+- **Viaje emocional:** ser vista → alivio. En la 6, cambiar el tono: a cámara, voz suave. · Perfil 💗🧠 (las encuestas funcionan como diagnóstico para la analítica)
 1. "Imagina abrir tus DMs y que todos quieran comprar. Hagamos un diagnóstico rápido 👇"
 2. Encuesta: "¿Te preguntan el precio y desaparecen? Sí / No"
 3. Encuesta: "¿Tus posts virales venden? Sí / No"
@@ -25,6 +29,7 @@ Usa stickers: encuesta, caja de preguntas, slider, link.
 8. "Si quieres que revise tu caso, escríbeme FILTRO."
 
 ## Secuencia 3 · "Detrás de un mes de 5k+" — Dolor 3 (autoridad)
+- **Viaje emocional:** orgullo. Agregar una historia: *"Lo que sentí cuando vi este número no fue euforia. Fue paz."* · Perfil 🧠💗
 1. Captura (con datos sensibles tapados): "Este mes: [RESULTADO]. Te cuento qué NO hice."
 2. "No publiqué todos los días."
 3. "No hice lives diarios."
@@ -35,6 +40,7 @@ Usa stickers: encuesta, caja de preguntas, slider, link.
 8. "Si quieres el primer paso, escríbeme 5K."
 
 ## Secuencia 4 · "Caso de clienta en tiempo real" — Prueba
+- **Viaje emocional:** esperanza. Pedir permiso para mostrar un audio o mensaje de la clienta con emoción real. · Perfil 💗
 1. "Hoy quiero contarte de [CLIENTA]. Hace 3 meses me escribió esto:" (captura)
 2. "*'Siento que hago todo bien y no pasa nada'*."
 3. "Lo que vimos en la primera sesión: su oferta era igual a la de 100 más."
@@ -44,6 +50,7 @@ Usa stickers: encuesta, caja de preguntas, slider, link.
 7. Link/CTA: "Abro [N] lugares para trabajar así contigo → escribe CASO."
 
 ## Secuencia 5 · "Mito vs. realidad de ser referente" — Dolor 5
+- **Viaje emocional:** reconocimiento. Compartir (anónimas) algunas respuestas a la caja para que se sientan parte. · Perfil 💗
 1. "Imagina que te inviten a hablar de tu tema sin haberlo pedido."
 2. Encuesta: "¿Para ser referente hacen falta miles de seguidores? Sí / No"
 3. "Respuesta: no. Hay referentes con 3.000 seguidores."
@@ -53,6 +60,7 @@ Usa stickers: encuesta, caja de preguntas, slider, link.
 7. Caja de preguntas: "¿Qué opinión impopular tienes sobre tu nicho?"
 
 ## Secuencia 6 · Secuencia de venta (apertura de cupos) — Todos los dolores
+- **Viaje emocional:** decisión desde el permiso. Agregar antes de la 9: *"Si te da miedo, está bien. Casi todas mis clientas entraron con miedo. Lo que no quiero es que dentro de un año sigas igual."* · Perfil 💗🧠
 1. "En 90 días puedes estar viviendo un mes de 5k con tu marca, con clientas que llegan solas."
 2. "Abro [N] lugares de [TU MÉTODO]."
 3. "Es para ti si: atraes curiosas, te frustra el contenido, te estancas antes de los 5k."
