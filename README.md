@@ -19,6 +19,12 @@ Y sobre tres reglas que no se negocian:
 | **Cada pieza es un viaje emocional** | Mi clienta es mujer y decide por emoción: anhelo → espejo → alivio → esperanza → confianza → decisión. |
 | **70 % emocional · 30 % técnico** | Para la clienta analítica: datos, casos con métricas y la lógica del método, sin dejar de abrir con el sueño ni de cerrar con emoción. |
 
+## Fábrica de Contenido (herramienta interactiva)
+
+👉 **https://claude.ai/artifact/GhL3RY1c6ZZuPYJRwN2fF5**
+
+Un tablero con los 60 hooks. Eliges los hooks que te gustan, marcas el formato (reel, carrusel, historias, vlog, YouTube de mentalidad o de tips) y el perfil de clienta (💗 Intuitiva, 🧠 Analítica o mixto), y la página arma cada pieza con toda la estrategia. Carga tus datos (método, casos, historia) una sola vez y se usan en todas las piezas. El código está en `app/fabrica-de-contenido.html`.
+
 ## Estructura
 
 ```

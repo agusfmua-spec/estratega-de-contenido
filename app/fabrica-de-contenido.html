@@ -1,0 +1,562 @@
+<title>Fábrica de Contenido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<style>
+/* Layout: a Pinterest-style board of hook "pins" on the left, a sticky order slip on the right; results live in a second tab. */
+:root{
+  --bg:#f8f4f6; --surface:#ffffff; --surface-2:#f1e9ee; --ink:#2b1730; --muted:#6f5a73; --line:#e4d7df;
+  --accent:#b3306a; --accent-ink:#ffffff; --accent-soft:#f6dde8; --tech:#1d6b74; --tech-soft:#d9eef0;
+  --d1:#b3306a; --d2:#a35a12; --d3:#2f7a3d; --d4:#5b45a8; --d5:#1d6b74; --d0:#6f5a73;
+  --shadow:0 1px 2px rgba(43,23,48,.06),0 6px 18px rgba(43,23,48,.06);
+  --display:"Young Serif",Georgia,"Times New Roman",serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1a1219; --surface:#251a24; --surface-2:#2f222e; --ink:#f4e9f0; --muted:#bba6b8; --line:#3e2e3c;
+  --accent:#f07aa9; --accent-ink:#2a0f1d; --accent-soft:#4a2236; --tech:#6cc3cc; --tech-soft:#173a3e;
+  --d1:#f07aa9; --d2:#e8a35c; --d3:#7fcf8c; --d4:#ad9cf0; --d5:#6cc3cc; --d0:#bba6b8;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25); color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#1a1219; --surface:#251a24; --surface-2:#2f222e; --ink:#f4e9f0; --muted:#bba6b8; --line:#3e2e3c;
+  --accent:#f07aa9; --accent-ink:#2a0f1d; --accent-soft:#4a2236; --tech:#6cc3cc; --tech-soft:#173a3e;
+  --d1:#f07aa9; --d2:#e8a35c; --d3:#7fcf8c; --d4:#ad9cf0; --d5:#6cc3cc; --d0:#bba6b8;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25); color-scheme:dark;}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:20px;padding-block:24px 110px}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px}
+header.top h1{font-size:clamp(28px,4vw,40px);line-height:1.1}
+header.top p{margin:6px 0 0;color:var(--muted);max-width:60ch}
+.tabs{display:flex;gap:4px;background:var(--surface-2);padding:4px;border-radius:999px}
+.tab{border:0;background:transparent;color:var(--muted);font:600 14px var(--body);padding:8px 16px;border-radius:999px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.tab .n{display:inline-block;min-width:20px;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:12px;line-height:20px;text-align:center}
+button{font-family:var(--body)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* data panel */
+details.data{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:18px}
+details.data summary{cursor:pointer;padding:14px 18px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+details.data summary::-webkit-details-marker{display:none}
+details.data summary small{font-weight:400;color:var(--muted)}
+.data-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;padding:0 18px 18px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.field input,.field textarea,.field select,.add-hook input,.add-hook select,.search{font:15px var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
+.field textarea{min-height:84px;resize:vertical}
+.field.wide{grid-column:1/-1}
+
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;align-items:start}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 12px;font:500 13px var(--body);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--c,var(--muted))}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+.search{flex:1 1 220px;width:auto}
+
+/* board */
+.board{columns:3 230px;column-gap:14px}
+.pin{break-inside:avoid;margin:0 0 14px;display:block;position:relative;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 16px 14px;cursor:pointer;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+.pin:hover{transform:translateY(-2px)}
+.pin input{position:absolute;opacity:0;pointer-events:none}
+.pin .tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--c)}
+.pin .tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
+.pin .txt{font-family:var(--display);font-size:17px;line-height:1.35;margin:8px 0 0}
+.pin .scene{display:block;margin-top:8px;font-size:13px;color:var(--muted);font-style:italic}
+.pin .check{position:absolute;top:12px;right:12px;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:14px;color:transparent;background:var(--surface)}
+.pin.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft),var(--shadow)}
+.pin.on .check{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.pin:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.pin .del{position:absolute;bottom:10px;right:12px;border:0;background:none;color:var(--muted);font-size:12px;cursor:pointer;text-decoration:underline}
+.empty{color:var(--muted);padding:24px 0}
+.add-hook{display:grid;grid-template-columns:minmax(0,1fr) 170px auto;gap:8px;margin:4px 0 18px;background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:12px}
+@media (max-width:600px){.add-hook{grid-template-columns:minmax(0,1fr)}}
+
+/* order slip */
+.slip{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:16px}
+.slip h2{font-size:22px}
+.slip h3{font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.sel-list{display:flex;flex-direction:column;gap:6px;max-height:210px;overflow:auto}
+.sel-item{display:flex;gap:8px;align-items:flex-start;font-size:13px;background:var(--surface-2);border-radius:10px;padding:8px 10px}
+.sel-item span{flex:1;min-width:0}
+.sel-item button{border:0;background:none;color:var(--muted);cursor:pointer;font-size:16px;line-height:1}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.opt{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13px;cursor:pointer;background:var(--bg)}
+.opt:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.opt.tech:has(input:checked){border-color:var(--tech);background:var(--tech-soft)}
+.opt input{accent-color:var(--accent);margin:0}
+.opts.one{grid-template-columns:1fr}
+.count{font-size:13px;color:var(--muted)}
+.btn{border:0;border-radius:12px;padding:12px 16px;font:700 15px var(--body);cursor:pointer;background:var(--accent);color:var(--accent-ink)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:600;font-size:13px;padding:8px 12px}
+.note{font-size:13px;color:var(--muted);margin:0}
+.note.warn{color:var(--d2)}
+
+/* mobile bar */
+.mbar{display:none}
+@media (max-width:900px){
+  .slip{position:static}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:5;gap:10px;align-items:center;justify-content:space-between;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(0,0,0,.08)}
+}
+
+/* results */
+.pieces{display:flex;flex-direction:column;gap:18px}
+.piece{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.piece-head{display:flex;flex-wrap:wrap;gap:10px 16px;justify-content:space-between;align-items:flex-start;padding:16px 18px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.piece-head .meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.badge{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:var(--surface);color:var(--muted);border:1px solid var(--line)}
+.badge.fmt{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.badge.st-run{color:var(--d2)} .badge.st-err{color:var(--d1)}
+.piece-head .hk{font-family:var(--display);font-size:18px;line-height:1.35;min-width:0}
+.piece-actions{display:flex;flex-wrap:wrap;gap:6px}
+.piece-body{padding:6px 22px 22px;min-width:0;overflow-wrap:anywhere}
+.piece-body h1,.piece-body h2,.piece-body h3{font-family:var(--display);margin:20px 0 8px}
+.piece-body h1{font-size:22px}.piece-body h2{font-size:19px}.piece-body h3{font-size:16px}
+.piece-body p,.piece-body li{max-width:72ch}
+.piece-body table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%}
+.piece-body td,.piece-body th{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+.piece-body blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid var(--accent);background:var(--surface-2);border-radius:0 10px 10px 0}
+.piece-body hr{border:0;border-top:1px solid var(--line);margin:18px 0}
+.thinking{color:var(--muted);font-style:italic;padding-top:16px}
+.thinking::after{content:"";display:inline-block;width:1.2em;text-align:left;animation:dots 1.4s steps(4) infinite}
+@keyframes dots{0%{content:""}25%{content:"."}50%{content:".."}75%{content:"..."}}
+@media (prefers-reduced-motion:reduce){.pin{transition:none}.thinking::after{animation:none;content:"..."}}
+.results-empty{background:var(--surface);border:1px dashed var(--line);border-radius:18px;padding:28px;color:var(--muted);text-align:left}
+.results-empty strong{color:var(--ink)}
+.fallback{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+.fallback textarea{width:100%;min-height:160px;margin-top:8px;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:14px;z-index:9}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Fábrica de Contenido</h1>
+      <p>Elige los hooks que te gustan, marca el formato y la fábrica arma la pieza completa con tu estrategia: sueño en el hook, dolor y prueba en el cuerpo, el qué sin el cómo, y el viaje emocional de principio a fin.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-board" aria-selected="true">Tablero de hooks</button>
+      <button class="tab" role="tab" id="tab-pieces" aria-selected="false">Mis piezas<span class="n" id="pieces-n">0</span></button>
+    </div>
+  </header>
+
+  <details class="data" id="data-panel">
+    <summary><span>Mis datos <small>· el nombre de tu método, tus casos y tu historia. Se usan en cada pieza.</small></span><small id="data-state">Sin completar</small></summary>
+    <div class="data-grid">
+      <div class="field"><label for="f-method">Nombre de tu método</label><input id="f-method" placeholder="Ej.: Método Marca Magnética"></div>
+      <div class="field"><label for="f-niche">Tu nicho / a quién ayudas</label><input id="f-niche" placeholder="Ej.: coaches y terapeutas que quieren facturar 5k"></div>
+      <div class="field"><label for="f-cta">Palabra clave o CTA principal</label><input id="f-cta" placeholder="Ej.: escribe QUIERO por DM"></div>
+      <div class="field wide"><label for="f-cases">Casos reales de clientas (con su permiso)</label><textarea id="f-cases" placeholder="Ej.: Laura, nutricionista: pasó de 1.800 a 6.200 USD/mes en 4 meses. En la primera llamada lloró porque pensaba dejarlo todo."></textarea></div>
+      <div class="field wide"><label for="f-story">Tu historia (tu momento más bajo y dónde estás hoy)</label><textarea id="f-story" placeholder="Ej.: En 2022 trabajaba 60 horas, facturaba 1.500 y mi hija me dijo 'siempre estás con el celular'. Hoy trabajo 20 horas y facturo 5 cifras."></textarea></div>
+    </div>
+  </details>
+
+  <section id="view-board">
+    <div class="layout">
+      <div>
+        <div class="filters" id="filters"></div>
+        <div class="toolbar">
+          <input class="search" id="search" type="search" placeholder="Buscar en los hooks…" aria-label="Buscar en los hooks">
+          <button class="btn ghost" id="clear-sel" type="button">Quitar selección</button>
+        </div>
+        <form class="add-hook" id="add-hook">
+          <input id="new-hook" placeholder="¿Tienes un hook propio? Escríbelo aquí y súmalo al tablero" aria-label="Nuevo hook">
+          <select id="new-hook-d" aria-label="Dolor del nuevo hook"></select>
+          <button class="btn ghost" type="submit">Agregar</button>
+        </form>
+        <div class="board" id="board"></div>
+        <p class="empty" id="board-empty" hidden>No hay hooks con ese filtro.</p>
+      </div>
+
+      <aside class="slip" id="slip" aria-label="Tu pedido">
+        <h2>Tu pedido</h2>
+        <div>
+          <h3>Hooks elegidos</h3>
+          <div class="sel-list" id="sel-list"></div>
+          <p class="note" id="sel-empty">Toca los hooks del tablero para elegirlos.</p>
+        </div>
+        <div>
+          <h3>Formatos</h3>
+          <div class="opts" id="formats"></div>
+        </div>
+        <div>
+          <h3>Perfil de clienta</h3>
+          <div class="opts one" id="profiles"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span class="count" id="count">0 piezas</span>
+          <button class="btn" id="go" type="button" disabled>Armar contenido</button>
+          <p class="note" id="go-note">Cada hook se arma en cada formato elegido. Hasta 12 piezas por pedido.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="view-pieces" hidden>
+    <div class="toolbar" style="justify-content:space-between;align-items:center">
+      <p class="note">Tus piezas quedan guardadas en este navegador. Usa <strong>Copiar</strong> para pasarlas a tu planner o a Notion.</p>
+      <button class="btn ghost" id="stop" type="button" hidden>Detener</button>
+    </div>
+    <div id="fallback" class="fallback" hidden></div>
+    <div class="pieces" id="pieces"></div>
+    <div class="results-empty" id="pieces-empty">
+      <strong>Todavía no armaste piezas.</strong><br>
+      Ve al tablero, elige uno o varios hooks, marca el formato (reel, carrusel, historias, vlog o YouTube) y toca <strong>Armar contenido</strong>.
+    </div>
+  </section>
+</div>
+
+<div class="mbar" id="mbar"><span class="count" id="mcount">0 hooks elegidos</span><button class="btn" id="mgo" type="button">Ver pedido</button></div>
+
+<script>
+const HOOKS = [{"id": "h1", "d": 1, "t": "Así se siente abrir tus DMs y que nadie te pregunte el precio: ya saben que quieren trabajar contigo."}, {"id": "h2", "d": 1, "t": "Imagina que tu próxima clienta te escriba: *'te sigo hace 3 meses, ¿dónde pago?'*"}, {"id": "h3", "d": 1, "t": "Mis clientas ya no hacen llamadas de venta. Hacen llamadas de bienvenida."}, {"id": "h4", "d": 1, "t": "Hay marcas personales que nunca dan descuento. Y no porque sean caras, sino porque son la única opción."}, {"id": "h5", "d": 1, "t": "Cerré 3 clientas esta semana y ninguna me preguntó *'¿y por qué tan caro?'*"}, {"id": "h6", "d": 1, "t": "Imagina dejar de convencer y empezar a elegir con quién trabajas."}, {"id": "h7", "d": 1, "t": "El día que tu contenido filtre por ti, vas a recuperar 10 horas por semana."}, {"id": "h8", "d": 1, "t": "Que te lleguen menos mensajes, pero todos con la tarjeta en la mano."}, {"id": "h9", "d": 1, "t": "Así se ve un DM de una clienta de alta conciencia (y por qué a ti todavía no te llegan)."}, {"id": "h10", "d": 1, "t": "Hay una forma de que tus seguidoras lleguen ya vendidas antes de hablar contigo."}, {"id": "h11", "d": 2, "t": "Martes, 11 a. m., café en una terraza y el negocio facturando. Esto no es Pinterest: es diseño."}, {"id": "h12", "d": 2, "t": "Esta mañana no abrí Instagram y igual entraron 2 ventas."}, {"id": "h13", "d": 2, "t": "Ese tablero de Pinterest que guardaste en 2021 no era un sueño. Era un plan sin estrategia."}, {"id": "h14", "d": 2, "t": "Trabajo 4 horas al día y facturo más que cuando trabajaba 12."}, {"id": "h15", "d": 2, "t": "Imagina viajar un mes y que tu marca siga vendiendo sin ti."}, {"id": "h16", "d": 2, "t": "Hay una versión de ti que ya vive la vida que guardaste en Pinterest. Te cuento qué hizo distinto."}, {"id": "h17", "d": 2, "t": "Mi agenda tiene huecos a propósito. Y mi facturación también creció a propósito."}, {"id": "h18", "d": 2, "t": "Así se ve un lunes cuando tu negocio no depende de que publiques todos los días."}, {"id": "h19", "d": 2, "t": "La laptop en la playa existe. Lo que nadie te dice es qué hay detrás."}, {"id": "h20", "d": 2, "t": "Dejé de vivir para mi marca y mi marca empezó a trabajar para mí."}, {"id": "h21", "d": 3, "t": "El mes que facturé mis primeros 5k no publiqué más que antes. Publiqué distinto."}, {"id": "h22", "d": 3, "t": "Imagina saber el día 1 cuánto vas a facturar el día 30."}, {"id": "h23", "d": 3, "t": "[CLIENTA] pasó de 1.800 a 6.200 USD/mes sin un solo seguidor nuevo."}, {"id": "h24", "d": 3, "t": "5k al mes con tu marca personal no es un sueño de influencer. Es una decisión de posicionamiento."}, {"id": "h25", "d": 3, "t": "Así se ve tu negocio cuando 5 clientas valen más que 50."}, {"id": "h26", "d": 3, "t": "Tu primer mes de 5k está más cerca de lo que crees, y no tiene nada que ver con trabajar más."}, {"id": "h27", "d": 3, "t": "La diferencia entre facturar 2k y 10k no es el talento. Es esto."}, {"id": "h28", "d": 3, "t": "Hay marcas con 2.000 seguidores facturando 10k al mes. Te cuento cómo piensan."}, {"id": "h29", "d": 3, "t": "Imagina que tu peor mes sea mejor que tu mejor mes de hoy."}, {"id": "h30", "d": 3, "t": "Pagué mi viaje con lo que facturé en una sola semana de lanzamiento."}, {"id": "h31", "d": 4, "t": "Imagina sentarte a crear contenido y saber exactamente qué decir, sin bloqueos."}, {"id": "h32", "d": 4, "t": "Grabé este reel en 7 minutos y me trajo 4 llamadas de venta."}, {"id": "h33", "d": 4, "t": "El día que tu contenido venda solo, vas a dejar de odiar Instagram."}, {"id": "h34", "d": 4, "t": "Crear contenido puede ser lo más fácil de tu semana. Así se siente cuando hay estrategia detrás."}, {"id": "h35", "d": 4, "t": "Mis clientas pasaron de *'no sé qué publicar'* a *'no me alcanza la semana para todo lo que quiero decir'*."}, {"id": "h36", "d": 4, "t": "Hay una forma de crear contenido que no te deja vacía. Se siente como hablar con una amiga y vender."}, {"id": "h37", "d": 4, "t": "Publico 3 veces por semana y vendo más que cuando publicaba todos los días."}, {"id": "h38", "d": 4, "t": "Imagina que cada pieza que publiques sea una vendedora trabajando 24/7 por ti."}, {"id": "h39", "d": 4, "t": "No volví a quedarme en blanco frente a la cámara desde que entendí esto."}, {"id": "h40", "d": 4, "t": "Cuando tu mensaje está claro, el contenido se escribe solo."}, {"id": "h41", "d": 5, "t": "Imagina que en tu nicho digan tu nombre cuando alguien pregunta *'¿a quién me recomiendas?'*"}, {"id": "h42", "d": 5, "t": "Me invitaron a 3 podcasts este mes y no le escribí a ninguno."}, {"id": "h43", "d": 5, "t": "Ser referente no es tener más seguidores. Es que tu nombre aparezca cuando no estás en la sala."}, {"id": "h44", "d": 5, "t": "[CLIENTA] pasó de ser *'una más'* a ser LA referente en [NICHO] en 6 meses."}, {"id": "h45", "d": 5, "t": "Imagina que otras profesionales de tu nicho te citen."}, {"id": "h46", "d": 5, "t": "El día que tengas una postura, vas a dejar de competir."}, {"id": "h47", "d": 5, "t": "Las referentes de tu nicho no saben más que tú. Comunican distinto."}, {"id": "h48", "d": 5, "t": "Hay una razón por la que algunas marcas cobran el triple y tienen lista de espera."}, {"id": "h49", "d": 5, "t": "Imagina que tu marca sea la respuesta automática a un problema."}, {"id": "h50", "d": 5, "t": "Así se ve cuando dejas de ser *'una opción'* y pasas a ser *'la opción'*."}, {"id": "h51", "d": 0, "t": "POV: tu marca factura mientras desayunas.", "scene": "café + laptop en terraza"}, {"id": "h52", "d": 0, "t": "La 3.ª venta del día y todavía no publiqué nada.", "scene": "notificación de pago"}, {"id": "h53", "d": 0, "t": "Me voy 15 días. Mi marca se queda vendiendo.", "scene": "valija"}, {"id": "h54", "d": 0, "t": "Este es el tipo de mensaje que quieres recibir.", "scene": "captura de DM"}, {"id": "h55", "d": 0, "t": "Mi semana laboral de 20 horas que factura 5 cifras.", "scene": "agenda con pocos bloques"}, {"id": "h56", "d": 0, "t": "Cuando te invitan porque ya eres referente.", "scene": "micrófono de podcast"}, {"id": "h57", "d": 0, "t": "Así se ve un mes predecible.", "scene": "dashboard de ventas"}, {"id": "h58", "d": 0, "t": "Grabar contenido sin ansiedad existe.", "scene": "tú en cámara, relajada"}, {"id": "h59", "d": 0, "t": "El momento en que [CLIENTA] llegó a sus primeros 5k.", "scene": "clienta en videollamada celebrando"}, {"id": "h60", "d": 0, "t": "Pinterest 2022 vs. mi martes de hoy.", "scene": "tablero de Pinterest en pantalla → tu vida real"}];
+const DOLORES = {
+  1:{n:"Leads de baja conciencia",c:"--d1"},
+  2:{n:"Vida de Pinterest",c:"--d2"},
+  3:{n:"Facturar +5k",c:"--d3"},
+  4:{n:"Frustración con el contenido",c:"--d4"},
+  5:{n:"Ser referente",c:"--d5"},
+  0:{n:"Hook visual",c:"--d0"}
+};
+const FORMATS = [
+  {id:"reel",n:"Reel"},{id:"carrusel",n:"Carrusel"},{id:"historias",n:"Historias"},{id:"vlog",n:"Vlog"},
+  {id:"yt-mentalidad",n:"YouTube mentalidad"},{id:"yt-tips",n:"YouTube tips"}
+];
+const PROFILES = [
+  {id:"intuitiva",n:"💗 Intuitiva · emoción e historias"},
+  {id:"analitica",n:"🧠 Analítica · datos y lógica",tech:true},
+  {id:"mixto",n:"💗🧠 Mixto · emoción con datos"}
+];
+const MAX_PIECES = 12;
+
+const STRATEGY = `ESTRATEGIA (síguela al pie de la letra)
+
+PRECEPTO. Cada pieza le demuestra tres cosas a la audiencia:
+1) Que entiendo su problema incluso mejor de lo que ella misma lo entiende (nombrar la causa invisible, no el síntoma; poner en palabras su monólogo interno).
+2) Que sé resolverlo y ya lo hice con personas en una situación similar (prueba: caso de clienta o mi propia historia).
+3) Que mi forma de resolverlo es diferente a todo lo que ya intentó (contraste con: postear todos los días, tendencias y audios virales, plantillas de Canva, "aportar valor" regalando todo, bajar precios, cursos de reels, coaches genéricos).
+
+REGLAS QUE NO SE NEGOCIAN
+- El hook SIEMPRE vende el sueño (sell the dream): la vida deseada, concreta y sensorial. Nunca abre con el problema. Usa el hook elegido tal cual como apertura.
+- En el cuerpo van los dolores y la razón por la cual yo soy la solución.
+- Se muestra el QUÉ (qué hay que cambiar, por qué importa y qué pasa cuando lo tienes), NUNCA el CÓMO (plantillas, pasos exactos, herramientas, guiones, fórmulas). Si alguien pudiera implementarlo solo con la pieza, diste demasiado.
+- Una sola invitación (CTA) clara, desde la identidad y el permiso, nunca desde la presión ni la culpa.
+
+AUDIENCIA. Mujeres con marca personal o profesional (coaches, terapeutas, nutricionistas, diseñadoras, consultoras, abogadas, etc.), buenas en lo que hacen pero invisibles; facturan entre 0 y 3k/mes; ya probaron cursos y plantillas. Miedo secreto: "¿y si el problema soy yo?". Deseo secreto: que la elijan sin tener que convencer. Deciden por emoción: primero se sienten vistas, después se permiten desear y al final buscan razones.
+
+LOS 5 DOLORES (con su emoción oculta)
+1. Atrae leads con baja conciencia: DMs de "¿precio?" que desaparecen, piden descuento. Causa: su contenido le habla a quien todavía no sabe que la necesita. Emoción oculta: humillación silenciosa de tener que convencer, sentirse barata. Despertar: dignidad, ser elegida sin rogar.
+2. No logra su vida de tablero de Pinterest: emprendió por libertad y trabaja más que nunca, atada al celular. Causa: negocio que depende de su presencia diaria. Emoción oculta: cansancio, culpa con la familia y consigo misma. Despertar: libertad y reencuentro consigo misma.
+3. Quiere facturar +5k/mes y no lo logra: estancada entre 1.500 y 2.500, montaña rusa. Causa: posicionamiento, no esfuerzo. Emoción oculta: miedo, inseguridad económica, "¿vuelvo a buscar trabajo?". Despertar: seguridad, orgullo, independencia.
+4. Le frustra crear contenido y siente que no comunica: no sabe qué publicar, se traba frente a la cámara, hace de todo y no pasa nada. Causa: le falta un mensaje, no creatividad. Emoción oculta: miedo al juicio, comparación, síndrome de impostora. Despertar: alivio y voz propia.
+5. Quiere ser referente en su nicho: ve a otras con menos experiencia crecer. Causa: comunica como "una más", sin postura. Emoción oculta: invisibilidad, envidia silenciosa que le da culpa. Despertar: reconocimiento, ser vista.
+
+MI MÉTODO (mostrar solo las fases, nunca el paso a paso): 1) Posicionamiento magnético, 2) Mensaje que vende solo, 3) Contenido por niveles de conciencia, 4) Sistema de libertad.
+
+VIAJE EMOCIONAL (cada pieza lo recorre completo y lo marca con estos íconos):
+💫 Anhelo (hook: el sueño) → 🪞 Espejo (su escena real + su monólogo interno, con palabras que ella nunca dijo en voz alta) → 🫂 Alivio ("no eres tú", le sacas la culpa) → 🌱 Esperanza (historia de una mujer real, con emociones y no solo números) → 🔑 Confianza (la diferencia + el QUÉ) → 💌 Decisión (CTA desde el permiso).
+Herramientas: escenas concretas en vez de conceptos; detalles sensoriales del sueño; vulnerabilidad con propósito; dar permiso ("está bien querer más"); hablar de identidad ("la mujer que no se justifica"). La pieza debe provocar una reacción física (nudo en la garganta, piel de gallina, "uf, me pasa").
+Palabras que activan: elegirte, merecer, permiso, tranquilidad, volver a ti, respirar, orgullo, ser vista, sin culpa, tu voz, tu tiempo, independencia. Evitar: hackear, funnel, KPI, grind, "no seas floja", "excusas", cualquier tono que culpe o avergüence.`;
+
+const FORMAT_GUIDE = {
+  "reel": `FORMATO: REEL de Instagram (30 a 60 segundos).
+Entrega:
+- Un título interno corto.
+- El guion dividido en los 6 momentos (💫 Anhelo, 🪞 Espejo, 🫂 Alivio, 🌱 Esperanza, 🔑 Confianza, 💌 Decisión). En cada momento: **Voz** (lo que dices), **Texto en pantalla** y **Plano/visual**, con duración aproximada en segundos.
+- Notas de grabación (tono de voz por momento, ritmo, música sugerida).
+- Caption para el post (con la misma lógica, cierre con el CTA).`,
+  "carrusel": `FORMATO: CARRUSEL de Instagram (8 a 12 slides).
+Entrega:
+- Slide por slide, numeradas: el texto exacto de cada una y una nota breve de diseño. Portada = el hook (sueño). Una idea por slide. Incluye obligatoriamente una slide de alivio ("no eres tú"). Marca a qué momento del viaje emocional corresponde cada slide con su ícono.
+- Caption para el post con el CTA.`,
+  "historias": `FORMATO: SECUENCIA DE HISTORIAS de Instagram (6 a 9 historias).
+Entrega cada historia numerada con: **Qué se ve** (a cámara, foto, video, captura), **Texto/voz** y **Sticker** cuando corresponda (encuesta, caja de preguntas, slider, link) con sus opciones. La primera historia es el sueño. Incluye al menos una historia a cámara, íntima, como un audio a una amiga (espejo o alivio). Marca el momento del viaje emocional con su ícono. Cierra con la invitación.`,
+  "vlog": `FORMATO: VLOG (versión YouTube de 8 a 15 minutos + versión corta de 60 a 90 segundos para reel).
+Entrega:
+- Título y 2 ideas de miniatura.
+- Escaleta por bloques con tiempos aproximados: apertura con el sueño (0 a 30 segundos), bloques de vida real con lo que se ve y lo que se dice (voz en off o a cámara), un **momento vulnerable** a cámara (sin música, honesto), un **momento de emoción real**, el bloque de método/diferencia (el qué) y el cierre con CTA. Marca el viaje emocional con los íconos.
+- Guion de la versión corta.`,
+  "yt-mentalidad": `FORMATO: VIDEO DE YOUTUBE DE MENTALIDAD (10 a 20 minutos).
+Entrega:
+- Título (y 2 alternativas) y 2 ideas de miniatura.
+- Guion por secciones con tiempos: 1) Hook con el sueño (0 a 30 segundos), 2) Promesa del video, 3) **Momento espejo** largo con su monólogo interno, 4) La creencia oculta que causa el dolor, 5) Historia/prueba completa, 6) La nueva creencia y por qué mi enfoque es distinto, 7) El QUÉ (qué cambiar, sin el cómo), 8) **Frase de identidad** que ella quiera repetirse, 9) CTA.
+- Escribe los fragmentos clave palabra por palabra (hook, espejo, alivio, frase de identidad, CTA) y el resto como puntos desarrollados.`,
+  "yt-tips": `FORMATO: VIDEO DE YOUTUBE DE TIPS / "PASO A PASO" (8 a 15 minutos).
+Importante: parece un paso a paso, pero cada paso es un QUÉ, nunca un CÓMO. El espectador termina con claridad y con ganas de implementación guiada.
+Entrega:
+- Título (y 2 alternativas) y 2 ideas de miniatura.
+- Hook con el sueño (palabra por palabra), dolor de 1 minuto.
+- 3 a 5 pasos. Cada paso con: qué es, por qué importa, error común, qué pasa cuando lo haces bien, y un dato o caso con métrica para la clienta analítica.
+- 30 segundos a cámara en tono personal antes del cierre ("no tienes que hacerlo sola").
+- Cierre emocional y CTA.`
+};
+const PROFILE_GUIDE = {
+  intuitiva: "PERFIL: 💗 Intuitiva (coach, terapeuta, creativa). Confía cuando se siente comprendida: más historia, escenas, vulnerabilidad, testimonios emocionales y lifestyle. Datos solo si suman a la historia.",
+  analitica: "PERFIL: 🧠 Analítica (nutricionista, abogada, contadora, consultora, ex corporativa). Confía cuando entiende la lógica: suma datos, diagnósticos, matemática simple del negocio, casos con métricas y la estructura del método por fases. Pero igual abre con el sueño (un sueño medible) y cierra con una frase emocional: los datos son el permiso para creer lo que ya sintió.",
+  mixto: "PERFIL: 💗🧠 Mixto. Base emocional completa con uno o dos datos concretos que den credibilidad a la mujer más analítica."
+};
+
+/* ---------- state ---------- */
+const store = {
+  get(k,f){try{const v=localStorage.getItem("fc:"+k);return v?JSON.parse(v):f}catch(e){return f}},
+  set(k,v){try{localStorage.setItem("fc:"+k,JSON.stringify(v))}catch(e){}}
+};
+let customHooks = store.get("custom",[]);
+let selected = new Set(store.get("selected",[]));
+let formats = new Set(store.get("formats",["reel"]));
+let profile = store.get("profile","mixto");
+let pieces = store.get("pieces",[]);
+let filterD = "all", query = "";
+let sample = null, sampleReady = false;
+let running = false, ctl = null, queue = [];
+
+const $ = s => document.querySelector(s);
+const allHooks = () => [...HOOKS, ...customHooks];
+const hookById = id => allHooks().find(h => h.id === id);
+const clean = t => t.replace(/\*/g,"");
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function toast(msg){const t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.append(t);setTimeout(()=>t.remove(),2200)}
+
+/* ---------- my data ---------- */
+const DATA_FIELDS = ["method","niche","cta","cases","story"];
+function readData(){const d={};DATA_FIELDS.forEach(k=>d[k]=$("#f-"+k).value.trim());return d}
+function updateDataState(){
+  const d=readData(); const n=DATA_FIELDS.filter(k=>d[k]).length;
+  $("#data-state").textContent = n? `${n} de 5 completos` : "Sin completar";
+}
+(function initData(){
+  const d=store.get("data",{});
+  DATA_FIELDS.forEach(k=>{const el=$("#f-"+k);el.value=d[k]||"";el.addEventListener("input",()=>{store.set("data",readData());updateDataState()})});
+  if(!DATA_FIELDS.some(k=>d[k])) $("#data-panel").open = true;
+  updateDataState();
+})();
+
+/* ---------- filters & board ---------- */
+function renderFilters(){
+  const f=$("#filters"); f.innerHTML="";
+  const mk=(key,label,color)=>{const b=document.createElement("button");b.type="button";b.className="chip";b.setAttribute("aria-pressed",String(filterD===key));
+    b.innerHTML=(color?`<span class="dot" style="--c:var(${color})"></span>`:"")+esc(label);b.onclick=()=>{filterD=key;renderFilters();renderBoard()};f.append(b)};
+  mk("all","Todos");
+  [1,2,3,4,5,0].forEach(d=>mk(String(d),DOLORES[d].n,DOLORES[d].c));
+  mk("sel",`Elegidos (${selected.size})`);
+}
+function renderBoard(){
+  const b=$("#board"); b.innerHTML="";
+  const q=query.toLowerCase();
+  const list=allHooks().filter(h=>(filterD==="all"||(filterD==="sel"?selected.has(h.id):String(h.d)===filterD)) && (!q||clean(h.t).toLowerCase().includes(q)));
+  list.forEach(h=>{
+    const lab=document.createElement("label"); lab.className="pin"+(selected.has(h.id)?" on":"");
+    lab.style.setProperty("--c",`var(${DOLORES[h.d].c})`);
+    lab.innerHTML=`<input type="checkbox" ${selected.has(h.id)?"checked":""} aria-label="Elegir hook"><span class="check">✓</span>
+      <span class="tag">${esc(DOLORES[h.d].n)}${h.custom?" · propio":""}</span>
+      <p class="txt">${esc(clean(h.t))}</p>${h.scene?`<span class="scene">Escena: ${esc(h.scene)}</span>`:""}
+      ${h.custom?`<button class="del" type="button">Quitar</button>`:""}`;
+    const cb=lab.querySelector("input");
+    cb.addEventListener("change",()=>{cb.checked?selected.add(h.id):selected.delete(h.id);lab.classList.toggle("on",cb.checked);saveSel();renderSlip();renderFilters()});
+    const del=lab.querySelector(".del");
+    if(del) del.addEventListener("click",e=>{e.preventDefault();customHooks=customHooks.filter(x=>x.id!==h.id);selected.delete(h.id);store.set("custom",customHooks);saveSel();renderAll()});
+    b.append(lab);
+  });
+  $("#board-empty").hidden = list.length>0;
+}
+function saveSel(){store.set("selected",[...selected])}
+$("#search").addEventListener("input",e=>{query=e.target.value;renderBoard()});
+$("#clear-sel").addEventListener("click",()=>{selected.clear();saveSel();renderAll()});
+(function initAdd(){
+  const s=$("#new-hook-d");
+  [1,2,3,4,5,0].forEach(d=>{const o=document.createElement("option");o.value=d;o.textContent=DOLORES[d].n;s.append(o)});
+  $("#add-hook").addEventListener("submit",e=>{e.preventDefault();const t=$("#new-hook").value.trim();if(!t)return;
+    const h={id:"c"+Date.now(),d:Number(s.value),t,custom:true};customHooks.push(h);selected.add(h.id);store.set("custom",customHooks);saveSel();$("#new-hook").value="";renderAll();toast("Hook agregado y elegido")});
+})();
+
+/* ---------- order slip ---------- */
+function renderOptions(){
+  const f=$("#formats"); f.innerHTML="";
+  FORMATS.forEach(x=>{const l=document.createElement("label");l.className="opt";l.innerHTML=`<input type="checkbox" id="fmt-${x.id}" ${formats.has(x.id)?"checked":""}> ${esc(x.n)}`;
+    l.querySelector("input").addEventListener("change",e=>{e.target.checked?formats.add(x.id):formats.delete(x.id);store.set("formats",[...formats]);renderSlip()});f.append(l)});
+  const p=$("#profiles"); p.innerHTML="";
+  PROFILES.forEach(x=>{const l=document.createElement("label");l.className="opt"+(x.tech?" tech":"");l.innerHTML=`<input type="radio" name="profile" id="prof-${x.id}" ${profile===x.id?"checked":""}> ${esc(x.n)}`;
+    l.querySelector("input").addEventListener("change",()=>{profile=x.id;store.set("profile",profile)});p.append(l)});
+}
+function renderSlip(){
+  const sl=$("#sel-list"); sl.innerHTML="";
+  [...selected].forEach(id=>{const h=hookById(id);if(!h)return;const d=document.createElement("div");d.className="sel-item";
+    d.innerHTML=`<span>${esc(clean(h.t))}</span><button type="button" aria-label="Quitar">×</button>`;
+    d.querySelector("button").onclick=()=>{selected.delete(id);saveSel();renderAll()};sl.append(d)});
+  $("#sel-empty").hidden = selected.size>0;
+  const n=selected.size*formats.size;
+  $("#count").textContent = `${selected.size} hook${selected.size===1?"":"s"} × ${formats.size} formato${formats.size===1?"":"s"} = ${n} pieza${n===1?"":"s"}`;
+  const over=n>MAX_PIECES;
+  $("#go").disabled = n===0 || over || running;
+  $("#go-note").textContent = over ? `Son ${n} piezas. Elige como máximo ${MAX_PIECES} por pedido (menos hooks o menos formatos).` : running ? "Hay un pedido en curso. Espera a que termine." : "Cada hook se arma en cada formato elegido. Hasta 12 piezas por pedido.";
+  $("#go-note").className = "note"+(over?" warn":"");
+  $("#mcount").textContent = `${selected.size} hook${selected.size===1?"":"s"} · ${n} pieza${n===1?"":"s"}`;
+}
+$("#mgo").addEventListener("click",()=>$("#slip").scrollIntoView({behavior:"smooth",block:"start"}));
+
+/* ---------- tabs ---------- */
+function showTab(which){
+  $("#tab-board").setAttribute("aria-selected",String(which==="board"));
+  $("#tab-pieces").setAttribute("aria-selected",String(which==="pieces"));
+  $("#view-board").hidden = which!=="board";
+  $("#view-pieces").hidden = which!=="pieces";
+  $("#mbar").style.visibility = which==="board" ? "visible" : "hidden";
+  window.scrollTo({top:0});
+}
+$("#tab-board").onclick=()=>showTab("board");
+$("#tab-pieces").onclick=()=>showTab("pieces");
+
+/* ---------- prompt ---------- */
+function buildPrompt(p){
+  const d=store.get("data",{});
+  const lines=[];
+  if(d.method) lines.push(`- Nombre de mi método: ${d.method}`);
+  if(d.niche) lines.push(`- Mi nicho / a quién ayudo: ${d.niche}`);
+  if(d.cta) lines.push(`- CTA principal / palabra clave: ${d.cta}`);
+  if(d.cases) lines.push(`- Casos reales de clientas (úsalos tal cual, no inventes cifras nuevas):\n${d.cases}`);
+  if(d.story) lines.push(`- Mi historia:\n${d.story}`);
+  const mine = lines.length ? lines.join("\n") : "(No cargó datos.)";
+  const h=hookById(p.hookId) || {t:p.hook,d:p.d};
+  return `Eres mi estratega de contenido. Escribe UNA pieza de contenido lista para producir, en español neutro y tuteando (tú), con mi voz: cálida, cercana, segura, de mujer a mujer.
+
+${STRATEGY}
+
+MIS DATOS
+${mine}
+Si falta un dato (nombre del método, caso, cifra, historia), usa marcadores entre corchetes como [TU MÉTODO], [CLIENTA], [RESULTADO], [TU HISTORIA]. Nunca inventes resultados, cifras ni testimonios como si fueran reales.
+
+HOOK ELEGIDO (úsalo como apertura, puedes ajustar mínimamente la redacción para el formato)
+"${clean(h.t)}"${h.scene?`\nEscena sugerida: ${h.scene}`:""}
+Dolor principal: ${DOLORES[h.d].n}${h.d===0?" (elige el dolor que mejor encaje y dilo)":""}
+
+${FORMAT_GUIDE[p.format]}
+
+${PROFILE_GUIDE[p.profile]}
+
+SALIDA
+- Markdown limpio. Empieza con un título "## " con el nombre de la pieza. No escribas introducciones ni comentarios hacia mí antes o después de la pieza.
+- Al final agrega "### Checklist" con 4 líneas cortas que confirmen: sueño en el hook, dolor + monólogo interno, prueba, el qué sin el cómo.`;
+}
+
+/* ---------- pieces ---------- */
+function fmtName(id){return (FORMATS.find(f=>f.id===id)||{}).n||id}
+function profName(id){return {intuitiva:"💗 Intuitiva",analitica:"🧠 Analítica",mixto:"💗🧠 Mixto"}[id]||id}
+function md(t){try{return DOMPurify.sanitize(marked.parse(t))}catch(e){return "<pre>"+esc(t)+"</pre>"}}
+function savePieces(){store.set("pieces",pieces.map(p=>({...p,status:p.status==="run"||p.status==="wait"?"err":p.status})))}
+
+function renderPieces(){
+  const box=$("#pieces"); box.innerHTML="";
+  $("#pieces-n").textContent = pieces.length;
+  $("#pieces-empty").hidden = pieces.length>0;
+  pieces.forEach(p=>box.append(pieceEl(p)));
+}
+function pieceEl(p){
+  const el=document.createElement("article"); el.className="piece"; el.id="p-"+p.id;
+  const st = p.status==="run"?`<span class="badge st-run">Escribiendo</span>`:p.status==="wait"?`<span class="badge st-run">En cola</span>`:p.status==="err"?`<span class="badge st-err">Incompleta</span>`:"";
+  el.innerHTML=`<div class="piece-head"><div style="min-width:0;flex:1 1 280px">
+      <div class="meta"><span class="badge fmt">${esc(fmtName(p.format))}</span><span class="badge">${esc(profName(p.profile))}</span><span class="badge">${esc(DOLORES[p.d]?.n||"")}</span>${st}</div>
+      <div class="hk">${esc(clean(p.hook))}</div></div>
+    <div class="piece-actions">
+      <button class="btn ghost" data-a="copy" type="button" ${p.text?"":"disabled"}>Copiar</button>
+      <button class="btn ghost" data-a="regen" type="button" ${running?"disabled":""}>Rehacer</button>
+      <button class="btn ghost" data-a="del" type="button">Eliminar</button>
+    </div></div>
+    <div class="piece-body"></div>`;
+  const body=el.querySelector(".piece-body");
+  if(p.text) body.innerHTML=md(p.text);
+  else if(p.status==="run"||p.status==="wait") body.innerHTML=`<p class="thinking">${p.status==="wait"?"Esperando su turno":"Pensando la pieza"}</p>`;
+  if(p.error) body.insertAdjacentHTML("beforeend",`<p class="note warn">${esc(p.error)}</p>`);
+  el.querySelector('[data-a="copy"]').onclick=async()=>{
+    try{await navigator.clipboard.writeText(p.text);toast("Copiado")}catch(e){const r=document.createRange();r.selectNodeContents(body);const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Texto seleccionado: cópialo con Ctrl/Cmd + C")}
+  };
+  el.querySelector('[data-a="regen"]').onclick=()=>{if(running)return;p.text="";p.error="";p.status="wait";queue=[p];renderPieces();runQueue(true)};
+  const del=el.querySelector('[data-a="del"]');
+  del.onclick=()=>{
+    if(del.dataset.confirm){pieces=pieces.filter(x=>x.id!==p.id);savePieces();renderPieces();return}
+    del.dataset.confirm="1";del.textContent="¿Seguro? Toca otra vez";setTimeout(()=>{if(del.isConnected){delete del.dataset.confirm;del.textContent="Eliminar"}},3500)
+  };
+  return el;
+}
+function updatePiece(p){const old=$("#p-"+p.id);if(old)old.replaceWith(pieceEl(p))}
+
+const ERR = {
+  not_granted:"No se dio permiso para usar Claude desde esta página. Puedes copiar el pedido y pegármelo en el chat.",
+  sampling_disabled:"Claude no está disponible para esta cuenta en esta página.",
+  rate_limited:"Llegaste al límite de pedidos por ahora. Espera unos minutos y toca Rehacer.",
+  session_expired:"Tu sesión expiró. Vuelve a iniciar sesión y toca Rehacer.",
+  refused:"Esta pieza no se pudo generar. Prueba con otro hook o reformúlalo.",
+  empty_completion:"La respuesta llegó vacía. Toca Rehacer.",
+  upstream_error:"Se cortó la conexión. Toca Rehacer para intentarlo de nuevo.",
+  prompt_too_large:"Tus datos son demasiado largos. Acorta los casos o la historia."
+};
+const FATAL = new Set(["not_granted","sampling_disabled","not_declared","capability_disabled","capability_removed"]);
+
+async function runQueue(fresh){
+  if(!sampleReady){running=true;renderSlip();await sampleP;running=false}
+  if(!sample){showFallback();queue.forEach(q=>{q.status="err";q.error="Copia el pedido de arriba y pégamelo en el chat."});queue=[];savePieces();renderPieces();renderSlip();return}
+  running=true; $("#stop").hidden=false; renderSlip();
+  while(queue.length){
+    const p=queue.shift(); p.status="run"; updatePiece(p);
+    ctl=new AbortController();
+    let last=0;
+    try{
+      const opts={signal:ctl.signal,onText:({text})=>{
+        p.text=text; const now=Date.now(); if(now-last>250){last=now;const b=$("#p-"+p.id+" .piece-body");if(b)b.innerHTML=md(text)}
+      }};
+      if(fresh) opts.cache=false;
+      const r=await sample(buildPrompt(p),opts);
+      p.text=r.text; p.status="done"; p.error = r.truncated?"La pieza quedó cortada. Toca Rehacer o elige menos formatos.":"";
+    }catch(e){
+      p.text = e && e.code!=="refused" ? (e.text||p.text||"") : "";
+      p.status="err";
+      if(e && e.code==="cancelled"){p.error="Detenida.";queue.forEach(q=>{q.status="err";q.error="Detenida antes de empezar."});queue=[]}
+      else if(e && FATAL.has(e.code)){p.error=ERR[e.code]||"Claude no está disponible en esta página.";queue.forEach(q=>{q.status="err";q.error=p.error});queue=[];sample=null;showFallback()}
+      else if(e && e.code==="rate_limited"){p.error=ERR.rate_limited;queue.forEach(q=>{q.status="err";q.error="No se armó por el límite de pedidos. Toca Rehacer más tarde."});queue=[]}
+      else p.error=ERR[e&&e.code]||ERR.upstream_error;
+    }
+    savePieces(); updatePiece(p);
+  }
+  running=false; ctl=null; $("#stop").hidden=true; renderSlip(); renderPieces();
+}
+$("#stop").onclick=()=>ctl?.abort();
+
+$("#go").addEventListener("click",()=>{
+  if(running) return;
+  const batch=[];
+  [...selected].forEach(id=>{const h=hookById(id);if(!h)return;
+    [...formats].forEach(f=>batch.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),hookId:h.id,hook:h.t,d:h.d,format:f,profile,text:"",status:"wait",created:new Date().toISOString()}))});
+  if(!batch.length) return;
+  pieces=[...batch,...pieces]; savePieces(); renderPieces(); showTab("pieces");
+  queue=[...batch]; runQueue(false);
+});
+
+/* fallback when Claude can't be called from the page */
+function showFallback(){
+  const fb=$("#fallback"); fb.hidden=false;
+  const waiting=pieces.filter(p=>!p.text);
+  const target = waiting[0] || pieces[0];
+  fb.innerHTML=`<strong>Esta vista no puede llamar a Claude.</strong> Copia el pedido de abajo y pégamelo en el chat: te devuelvo la pieza armada.
+    ${target?`<textarea id="fb-text" readonly aria-label="Pedido para Claude"></textarea><div style="margin-top:8px"><button class="btn ghost" id="fb-copy" type="button">Copiar pedido</button></div>`:""}`;
+  if(target){
+    const all=waiting.length?waiting:[target];
+    $("#fb-text").value = all.map(buildPrompt).join("\n\n==========\n\n");
+    $("#fb-copy").onclick=async()=>{try{await navigator.clipboard.writeText($("#fb-text").value);toast("Pedido copiado")}catch(e){$("#fb-text").select();toast("Texto seleccionado: cópialo con Ctrl/Cmd + C")}};
+  }
+}
+
+function renderAll(){renderFilters();renderBoard();renderSlip()}
+renderOptions(); renderAll(); renderPieces();
+
+const sampleP=(async()=>{
+  try{ sample = window.claude && window.claude.use ? await window.claude.use("sample") : null }catch(e){ sample=null }
+  sampleReady=true; return sample;
+})();
+</script>
