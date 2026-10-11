@@ -1,0 +1,47 @@
+# Estratega de Contenido · Marca Personal que Factura
+
+Sistema de contenido estratégico para una mentora/estratega de **marcas personales y profesionales**.
+
+Todo el contenido de este repositorio se construye sobre un solo precepto:
+
+> **Cada pieza de contenido le demuestra tres cosas a mi audiencia:**
+> 1. **Que entiendo su problema** incluso mejor de lo que ella misma lo entiende.
+> 2. **Que sé resolverlo** y ya lo hice con personas que estaban en una situación similar.
+> 3. **Que mi forma de resolverlo es diferente** a todo lo que ya intentó antes.
+
+Y sobre tres reglas que no se negocian:
+
+| Regla | Qué significa |
+|---|---|
+| **Hook = Sell the Dream** | Los primeros 1–3 segundos (o la portada / primera línea) siempre pintan la vida deseada, nunca el problema. |
+| **Cuerpo = Dolor + Por qué yo** | En el desarrollo aparecen los dolores (dichos mejor de lo que ella los diría) y la razón por la que yo soy la solución. |
+| **Qué, nunca el cómo** | Muestro *qué* hay que cambiar y *qué* resultados produce. El *cómo* (el paso a paso real) vive dentro de mi programa. |
+
+## Estructura
+
+```
+estrategia/
+  01-marco-estrategico.md     → El precepto, los 5 dolores, avatar, mecanismo único, pilares
+  02-formula-de-contenido.md  → La fórmula SUEÑO → DOLOR → PRUEBA → DIFERENCIA → INVITACIÓN
+  03-banco-de-hooks.md        → +60 hooks "sell the dream" ordenados por dolor
+contenido/
+  reels.md                    → 15 guiones de reels
+  carruseles.md               → 8 carruseles slide por slide
+  historias.md                → 6 secuencias de historias de Instagram
+  vlogs.md                    → 5 vlogs con escaleta
+  youtube-mentalidad.md       → 5 guiones de YouTube de mentalidad
+  youtube-tips.md             → 5 guiones de YouTube de tips / paso a paso ("qué", no "cómo")
+  calendario-30-dias.md       → Calendario de 4 semanas que combina todos los formatos
+```
+
+## Cómo personalizarlo
+
+Busca y reemplaza estos marcadores con tu información real:
+
+- `[TU MÉTODO]` → el nombre de tu método/programa (ej.: *Método Marca Magnética*).
+- `[CLIENTA]` / `[CLIENTE]` → nombre (o iniciales) de un caso real, con su permiso.
+- `[RESULTADO]` → cifra o logro real (ej.: "pasó de 1.200 USD a 6.800 USD/mes en 90 días").
+- `[TU HISTORIA]` → tu propio punto de quiebre (de dónde venías / dónde estás).
+- `[CTA]` → tu llamado a la acción (palabra clave por DM, link en bio, aplicación, etc.).
+
+> ⚠️ Usa solo resultados y testimonios reales. La prueba social inventada destruye exactamente lo que este sistema construye: confianza.
