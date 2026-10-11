@@ -140,7 +140,7 @@ details.data summary small{font-weight:400;color:var(--muted)}
   <header class="top">
     <div>
       <h1>Fábrica de Contenido</h1>
-      <p>Elige los hooks que te gustan, marca el formato y la fábrica arma la pieza completa con tu estrategia: sueño en el hook, dolor y prueba en el cuerpo, el qué sin el cómo, y el viaje emocional de principio a fin.</p>
+      <p>Elegí los hooks que te gustan, marcá el formato y el tipo de CTA, y la fábrica arma la pieza completa con tu estrategia: sueño en el hook, dolor y prueba en el cuerpo, el qué sin el cómo, el viaje emocional de principio a fin y todo en tu voz.</p>
     </div>
     <div class="tabs" role="tablist">
       <button class="tab" role="tab" id="tab-board" aria-selected="true">Tablero de hooks</button>
@@ -149,12 +149,13 @@ details.data summary small{font-weight:400;color:var(--muted)}
   </header>
 
   <details class="data" id="data-panel">
-    <summary><span>Mis datos <small>· el nombre de tu método, tus casos y tu historia. Se usan en cada pieza.</small></span><small id="data-state">Sin completar</small></summary>
+    <summary><span>Mis datos <small>· el nombre de tu método, tus casos, tu historia y lo que ya publicaste. Se usan en cada pieza.</small></span><small id="data-state">Sin completar</small></summary>
     <div class="data-grid">
       <div class="field"><label for="f-method">Nombre de tu método</label><input id="f-method" placeholder="Ej.: Método Marca Magnética"></div>
       <div class="field"><label for="f-niche">Tu nicho / a quién ayudas</label><input id="f-niche" placeholder="Ej.: coaches y terapeutas que quieren facturar 5k"></div>
       <div class="field"><label for="f-cta">Palabra clave o CTA principal</label><input id="f-cta" placeholder="Ej.: escribe QUIERO por DM"></div>
       <div class="field wide"><label for="f-cases">Casos reales de clientas (con su permiso)</label><textarea id="f-cases" placeholder="Ej.: Laura, nutricionista: pasó de 1.800 a 6.200 USD/mes en 4 meses. En la primera llamada lloró porque pensaba dejarlo todo."></textarea></div>
+      <div class="field wide"><label for="f-links">Contenido ya publicado para enlazar (reels, videos de YouTube, lead magnets, blog)</label><textarea id="f-links" placeholder="Ej.: Reel 'Martes 11 a. m.' (palabra REEL) · Video de YouTube 'Por qué no facturás 5k' · Test gratis 'Curiosas o compradoras' (palabra DIAGNÓSTICO)"></textarea></div>
       <div class="field wide"><label for="f-story">Tu historia (tu momento más bajo y dónde estás hoy)</label><textarea id="f-story" placeholder="Ej.: En 2022 trabajaba 60 horas, facturaba 1.500 y mi hija me dijo 'siempre estás con el celular'. Hoy trabajo 20 horas y facturo 5 cifras."></textarea></div>
     </div>
   </details>
@@ -168,7 +169,7 @@ details.data summary small{font-weight:400;color:var(--muted)}
           <button class="btn ghost" id="clear-sel" type="button">Quitar selección</button>
         </div>
         <form class="add-hook" id="add-hook">
-          <input id="new-hook" placeholder="¿Tienes un hook propio? Escríbelo aquí y súmalo al tablero" aria-label="Nuevo hook">
+          <input id="new-hook" placeholder="¿Tenés un hook propio? Escribilo acá y sumalo al tablero" aria-label="Nuevo hook">
           <select id="new-hook-d" aria-label="Dolor del nuevo hook"></select>
           <button class="btn ghost" type="submit">Agregar</button>
         </form>
@@ -181,11 +182,15 @@ details.data summary small{font-weight:400;color:var(--muted)}
         <div>
           <h3>Hooks elegidos</h3>
           <div class="sel-list" id="sel-list"></div>
-          <p class="note" id="sel-empty">Toca los hooks del tablero para elegirlos.</p>
+          <p class="note" id="sel-empty">Tocá los hooks del tablero para elegirlos.</p>
         </div>
         <div>
           <h3>Formatos</h3>
           <div class="opts" id="formats"></div>
+        </div>
+        <div>
+          <h3>Objetivo del CTA</h3>
+          <div class="opts one" id="ctas"></div>
         </div>
         <div>
           <h3>Perfil de clienta</h3>
@@ -202,14 +207,14 @@ details.data summary small{font-weight:400;color:var(--muted)}
 
   <section id="view-pieces" hidden>
     <div class="toolbar" style="justify-content:space-between;align-items:center">
-      <p class="note">Tus piezas quedan guardadas en este navegador. Usa <strong>Copiar</strong> para pasarlas a tu planner o a Notion.</p>
+      <p class="note">Tus piezas quedan guardadas en este navegador. Usá <strong>Copiar</strong> para pasarlas a tu planner o a Notion.</p>
       <button class="btn ghost" id="stop" type="button" hidden>Detener</button>
     </div>
     <div id="fallback" class="fallback" hidden></div>
     <div class="pieces" id="pieces"></div>
     <div class="results-empty" id="pieces-empty">
       <strong>Todavía no armaste piezas.</strong><br>
-      Ve al tablero, elige uno o varios hooks, marca el formato (reel, carrusel, historias, vlog o YouTube) y toca <strong>Armar contenido</strong>.
+      Andá al tablero, elegí uno o varios hooks, marcá el formato (reel, carrusel, historias, vlog o YouTube) y tocá <strong>Armar contenido</strong>.
     </div>
   </section>
 </div>
@@ -235,6 +240,18 @@ const PROFILES = [
   {id:"analitica",n:"🧠 Analítica · datos y lógica",tech:true},
   {id:"mixto",n:"💗🧠 Mixto · emoción con datos"}
 ];
+const CTAS = [
+  {id:"auto",n:"🎯 Automático (mix 70 / 25 / 5)"},
+  {id:"valor",n:"🟢 Valor: guardar, compartir, lead magnet o enlace"},
+  {id:"medio",n:"🟡 Medio: conversación, opinión, clase o caso"},
+  {id:"venta",n:"🔴 Venta directa"}
+];
+const CTA_GUIDE = {
+  auto:"OBJETIVO DEL CTA: elegí vos según la pieza, respetando el mix del embudo (70 % valor, 20-25 % medio, 5 % venta). Por defecto cerrá con un CTA de VALOR. Usá venta directa solo si la pieza es claramente de venta. Decí al principio de la pieza qué etapa elegiste.",
+  valor:"OBJETIVO DEL CTA: 🟢 VALOR. Nada de vender. Cerrá con guardar, compartir, seguir, comentar, un lead magnet o un enlace a otro contenido (\"Ya grabé un reel sobre esto, comentá REEL y te lo mando\", \"Tengo un video en YouTube, comentá VIDEO\").",
+  medio:"OBJETIVO DEL CTA: 🟡 MEDIO DEL EMBUDO. La pieza tiene más vulnerabilidad, historia u opinión. Cerrá con una conversación (contame en comentarios, respondeme por DM, sin vender), un lead magnet profundo (clase gratuita, análisis de caso) o la lista de espera.",
+  venta:"OBJETIVO DEL CTA: 🔴 VENTA DIRECTA. Invitación clara a comprar o aplicar, desde el permiso y sin presión, con urgencia real si existe ([N] lugares)."
+};
 const MAX_PIECES = 12;
 
 const STRATEGY = `ESTRATEGIA (síguela al pie de la letra)
@@ -249,6 +266,9 @@ REGLAS QUE NO SE NEGOCIAN
 - En el cuerpo van los dolores y la razón por la cual yo soy la solución.
 - Se muestra el QUÉ (qué hay que cambiar, por qué importa y qué pasa cuando lo tienes), NUNCA el CÓMO (plantillas, pasos exactos, herramientas, guiones, fórmulas). Si alguien pudiera implementarlo solo con la pieza, diste demasiado.
 - Una sola invitación (CTA) clara, desde la identidad y el permiso, nunca desde la presión ni la culpa.
+
+EMBUDO Y CTAs. No todo cierra en venta. Mix: 70 % valor (guardar, compartir, seguir, comentar, lead magnet, enlace a otra pieza), 20-25 % medio del embudo (vulnerabilidad, historia, opinión; CTA de conversación, clase gratuita, análisis de caso o lista de espera), 5 % venta directa. Las piezas se enlazan entre sí: un carrusel lleva a un reel viejo ("ya grabé un reel sobre esto, comentá REEL y te lo mando"), un reel a un video de YouTube ("comentá VIDEO"), el video a un lead magnet, el lead magnet a la conversación de venta. Cada video de YouTube también es un artículo de blog.
+Lead magnets (uno por dolor): LM1 Test "¿atraés curiosas o compradoras?" (DIAGNÓSTICO) · LM2 Guía "las 4 decisiones de un negocio de vida Pinterest" (LIBERTAD) · LM3 Clase gratuita "por qué te estancás antes de los 5k", que puede ser un video de YouTube (CLASE) · LM4 Mini guía "los 5 tipos de contenido que venden" (CONTENIDO) · LM5 Test "¿sos una más o sos referente?" (REFERENTE) · LM6 Video "una cuenta antes y después de 90 días" (CASO).
 
 AUDIENCIA. Mujeres con marca personal o profesional (coaches, terapeutas, nutricionistas, diseñadoras, consultoras, abogadas, etc.), buenas en lo que hacen pero invisibles; facturan entre 0 y 3k/mes; ya probaron cursos y plantillas. Miedo secreto: "¿y si el problema soy yo?". Deseo secreto: que la elijan sin tener que convencer. Deciden por emoción: primero se sienten vistas, después se permiten desear y al final buscan razones.
 
@@ -313,6 +333,7 @@ let customHooks = store.get("custom",[]);
 let selected = new Set(store.get("selected",[]));
 let formats = new Set(store.get("formats",["reel"]));
 let profile = store.get("profile","mixto");
+let ctaGoal = store.get("cta","auto");
 let pieces = store.get("pieces",[]);
 let filterD = "all", query = "";
 let sample = null, sampleReady = false;
@@ -326,11 +347,11 @@ function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",
 function toast(msg){const t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.append(t);setTimeout(()=>t.remove(),2200)}
 
 /* ---------- my data ---------- */
-const DATA_FIELDS = ["method","niche","cta","cases","story"];
+const DATA_FIELDS = ["method","niche","cta","cases","links","story"];
 function readData(){const d={};DATA_FIELDS.forEach(k=>d[k]=$("#f-"+k).value.trim());return d}
 function updateDataState(){
   const d=readData(); const n=DATA_FIELDS.filter(k=>d[k]).length;
-  $("#data-state").textContent = n? `${n} de 5 completos` : "Sin completar";
+  $("#data-state").textContent = n? `${n} de 6 completos` : "Sin completar";
 }
 (function initData(){
   const d=store.get("data",{});
@@ -382,6 +403,9 @@ function renderOptions(){
   const f=$("#formats"); f.innerHTML="";
   FORMATS.forEach(x=>{const l=document.createElement("label");l.className="opt";l.innerHTML=`<input type="checkbox" id="fmt-${x.id}" ${formats.has(x.id)?"checked":""}> ${esc(x.n)}`;
     l.querySelector("input").addEventListener("change",e=>{e.target.checked?formats.add(x.id):formats.delete(x.id);store.set("formats",[...formats]);renderSlip()});f.append(l)});
+  const c=$("#ctas"); c.innerHTML="";
+  CTAS.forEach(x=>{const l=document.createElement("label");l.className="opt";l.innerHTML=`<input type="radio" name="cta" id="cta-${x.id}" ${ctaGoal===x.id?"checked":""}> ${esc(x.n)}`;
+    l.querySelector("input").addEventListener("change",()=>{ctaGoal=x.id;store.set("cta",ctaGoal)});c.append(l)});
   const p=$("#profiles"); p.innerHTML="";
   PROFILES.forEach(x=>{const l=document.createElement("label");l.className="opt"+(x.tech?" tech":"");l.innerHTML=`<input type="radio" name="profile" id="prof-${x.id}" ${profile===x.id?"checked":""}> ${esc(x.n)}`;
     l.querySelector("input").addEventListener("change",()=>{profile=x.id;store.set("profile",profile)});p.append(l)});
@@ -396,7 +420,7 @@ function renderSlip(){
   $("#count").textContent = `${selected.size} hook${selected.size===1?"":"s"} × ${formats.size} formato${formats.size===1?"":"s"} = ${n} pieza${n===1?"":"s"}`;
   const over=n>MAX_PIECES;
   $("#go").disabled = n===0 || over || running;
-  $("#go-note").textContent = over ? `Son ${n} piezas. Elige como máximo ${MAX_PIECES} por pedido (menos hooks o menos formatos).` : running ? "Hay un pedido en curso. Espera a que termine." : "Cada hook se arma en cada formato elegido. Hasta 12 piezas por pedido.";
+  $("#go-note").textContent = over ? `Son ${n} piezas. Elegí como máximo ${MAX_PIECES} por pedido (menos hooks o menos formatos).` : running ? "Hay un pedido en curso. Esperá a que termine." : "Cada hook se arma en cada formato elegido. Hasta 12 piezas por pedido.";
   $("#go-note").className = "note"+(over?" warn":"");
   $("#mcount").textContent = `${selected.size} hook${selected.size===1?"":"s"} · ${n} pieza${n===1?"":"s"}`;
 }
@@ -425,13 +449,13 @@ function buildPrompt(p){
   if(d.story) lines.push(`- Mi historia:\n${d.story}`);
   const mine = lines.length ? lines.join("\n") : "(No cargó datos.)";
   const h=hookById(p.hookId) || {t:p.hook,d:p.d};
-  return `Eres mi estratega de contenido. Escribe UNA pieza de contenido lista para producir, en español neutro y tuteando (tú), con mi voz: cálida, cercana, segura, de mujer a mujer.
+  return `Eres mi estratega de contenido. Escribí UNA pieza de contenido lista para producir, en español rioplatense (argentino) con voseo: vos, tenés, sos, imaginate, contame, escribime. Con mi voz: simple, cálida y cercana, como si le mandara un audio a una amiga. Frases cortas y nada de palabras de manual. Aunque la estrategia de abajo tenga ejemplos con "tú", escribí TODO con voseo, y adaptá el hook al voseo ("Imagina" pasa a "Imaginate", "tienes" a "tenés").
 
 ${STRATEGY}
 
 MIS DATOS
 ${mine}
-Si falta un dato (nombre del método, caso, cifra, historia), usa marcadores entre corchetes como [TU MÉTODO], [CLIENTA], [RESULTADO], [TU HISTORIA]. Nunca inventes resultados, cifras ni testimonios como si fueran reales.
+Si falta un dato (nombre del método, caso, cifra, historia), usá marcadores entre corchetes como [TU MÉTODO], [CLIENTA], [RESULTADO], [TU HISTORIA]. Nunca inventes resultados, cifras ni testimonios como si fueran reales. Si cargué contenido ya publicado para enlazar, usalo en el CTA cuando encaje; si no, podés proponer un enlace genérico con marcador ([REEL SOBRE X], [VIDEO DE YOUTUBE SOBRE X], [LEAD MAGNET]).
 
 HOOK ELEGIDO (úsalo como apertura, puedes ajustar mínimamente la redacción para el formato)
 "${clean(h.t)}"${h.scene?`\nEscena sugerida: ${h.scene}`:""}
@@ -441,9 +465,11 @@ ${FORMAT_GUIDE[p.format]}
 
 ${PROFILE_GUIDE[p.profile]}
 
+${CTA_GUIDE[p.cta||"auto"]}
+
 SALIDA
-- Markdown limpio. Empieza con un título "## " con el nombre de la pieza. No escribas introducciones ni comentarios hacia mí antes o después de la pieza.
-- Al final agrega "### Checklist" con 4 líneas cortas que confirmen: sueño en el hook, dolor + monólogo interno, prueba, el qué sin el cómo.`;
+- Markdown limpio. Empezá con un título "## " con el nombre de la pieza. Debajo del título, una línea con **Etapa del embudo:** (🟢 Valor, 🟡 Medio o 🔴 Venta) y el tipo de CTA. No escribas introducciones ni comentarios hacia mí antes o después de la pieza.
+- Al final agregá "### Checklist" con 5 líneas cortas que confirmen: sueño en el hook, dolor + monólogo interno, prueba, el qué sin el cómo, CTA acorde a la etapa del embudo.`;
 }
 
 /* ---------- pieces ---------- */
@@ -462,7 +488,7 @@ function pieceEl(p){
   const el=document.createElement("article"); el.className="piece"; el.id="p-"+p.id;
   const st = p.status==="run"?`<span class="badge st-run">Escribiendo</span>`:p.status==="wait"?`<span class="badge st-run">En cola</span>`:p.status==="err"?`<span class="badge st-err">Incompleta</span>`:"";
   el.innerHTML=`<div class="piece-head"><div style="min-width:0;flex:1 1 280px">
-      <div class="meta"><span class="badge fmt">${esc(fmtName(p.format))}</span><span class="badge">${esc(profName(p.profile))}</span><span class="badge">${esc(DOLORES[p.d]?.n||"")}</span>${st}</div>
+      <div class="meta"><span class="badge fmt">${esc(fmtName(p.format))}</span><span class="badge">${esc(profName(p.profile))}</span><span class="badge">${esc({auto:"CTA automático",valor:"🟢 Valor",medio:"🟡 Medio",venta:"🔴 Venta"}[p.cta||"auto"])}</span><span class="badge">${esc(DOLORES[p.d]?.n||"")}</span>${st}</div>
       <div class="hk">${esc(clean(p.hook))}</div></div>
     <div class="piece-actions">
       <button class="btn ghost" data-a="copy" type="button" ${p.text?"":"disabled"}>Copiar</button>
@@ -475,33 +501,33 @@ function pieceEl(p){
   else if(p.status==="run"||p.status==="wait") body.innerHTML=`<p class="thinking">${p.status==="wait"?"Esperando su turno":"Pensando la pieza"}</p>`;
   if(p.error) body.insertAdjacentHTML("beforeend",`<p class="note warn">${esc(p.error)}</p>`);
   el.querySelector('[data-a="copy"]').onclick=async()=>{
-    try{await navigator.clipboard.writeText(p.text);toast("Copiado")}catch(e){const r=document.createRange();r.selectNodeContents(body);const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Texto seleccionado: cópialo con Ctrl/Cmd + C")}
+    try{await navigator.clipboard.writeText(p.text);toast("Copiado")}catch(e){const r=document.createRange();r.selectNodeContents(body);const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Texto seleccionado: copialo con Ctrl/Cmd + C")}
   };
   el.querySelector('[data-a="regen"]').onclick=()=>{if(running)return;p.text="";p.error="";p.status="wait";queue=[p];renderPieces();runQueue(true)};
   const del=el.querySelector('[data-a="del"]');
   del.onclick=()=>{
     if(del.dataset.confirm){pieces=pieces.filter(x=>x.id!==p.id);savePieces();renderPieces();return}
-    del.dataset.confirm="1";del.textContent="¿Seguro? Toca otra vez";setTimeout(()=>{if(del.isConnected){delete del.dataset.confirm;del.textContent="Eliminar"}},3500)
+    del.dataset.confirm="1";del.textContent="¿Segura? Tocá otra vez";setTimeout(()=>{if(del.isConnected){delete del.dataset.confirm;del.textContent="Eliminar"}},3500)
   };
   return el;
 }
 function updatePiece(p){const old=$("#p-"+p.id);if(old)old.replaceWith(pieceEl(p))}
 
 const ERR = {
-  not_granted:"No se dio permiso para usar Claude desde esta página. Puedes copiar el pedido y pegármelo en el chat.",
+  not_granted:"No se dio permiso para usar Claude desde esta página. Podés copiar el pedido y pegármelo en el chat.",
   sampling_disabled:"Claude no está disponible para esta cuenta en esta página.",
-  rate_limited:"Llegaste al límite de pedidos por ahora. Espera unos minutos y toca Rehacer.",
-  session_expired:"Tu sesión expiró. Vuelve a iniciar sesión y toca Rehacer.",
-  refused:"Esta pieza no se pudo generar. Prueba con otro hook o reformúlalo.",
-  empty_completion:"La respuesta llegó vacía. Toca Rehacer.",
-  upstream_error:"Se cortó la conexión. Toca Rehacer para intentarlo de nuevo.",
-  prompt_too_large:"Tus datos son demasiado largos. Acorta los casos o la historia."
+  rate_limited:"Llegaste al límite de pedidos por ahora. Esperá unos minutos y tocá Rehacer.",
+  session_expired:"Tu sesión expiró. Volvé a iniciar sesión y tocá Rehacer.",
+  refused:"Esta pieza no se pudo generar. Probá con otro hook o reformulalo.",
+  empty_completion:"La respuesta llegó vacía. Tocá Rehacer.",
+  upstream_error:"Se cortó la conexión. Tocá Rehacer para intentarlo de nuevo.",
+  prompt_too_large:"Tus datos son demasiado largos. Acortá los casos o la historia."
 };
 const FATAL = new Set(["not_granted","sampling_disabled","not_declared","capability_disabled","capability_removed"]);
 
 async function runQueue(fresh){
   if(!sampleReady){running=true;renderSlip();await sampleP;running=false}
-  if(!sample){showFallback();queue.forEach(q=>{q.status="err";q.error="Copia el pedido de arriba y pégamelo en el chat."});queue=[];savePieces();renderPieces();renderSlip();return}
+  if(!sample){showFallback();queue.forEach(q=>{q.status="err";q.error="Copiá el pedido de arriba y pegámelo en el chat."});queue=[];savePieces();renderPieces();renderSlip();return}
   running=true; $("#stop").hidden=false; renderSlip();
   while(queue.length){
     const p=queue.shift(); p.status="run"; updatePiece(p);
@@ -513,13 +539,13 @@ async function runQueue(fresh){
       }};
       if(fresh) opts.cache=false;
       const r=await sample(buildPrompt(p),opts);
-      p.text=r.text; p.status="done"; p.error = r.truncated?"La pieza quedó cortada. Toca Rehacer o elige menos formatos.":"";
+      p.text=r.text; p.status="done"; p.error = r.truncated?"La pieza quedó cortada. Tocá Rehacer o elegí menos formatos.":"";
     }catch(e){
       p.text = e && e.code!=="refused" ? (e.text||p.text||"") : "";
       p.status="err";
       if(e && e.code==="cancelled"){p.error="Detenida.";queue.forEach(q=>{q.status="err";q.error="Detenida antes de empezar."});queue=[]}
       else if(e && FATAL.has(e.code)){p.error=ERR[e.code]||"Claude no está disponible en esta página.";queue.forEach(q=>{q.status="err";q.error=p.error});queue=[];sample=null;showFallback()}
-      else if(e && e.code==="rate_limited"){p.error=ERR.rate_limited;queue.forEach(q=>{q.status="err";q.error="No se armó por el límite de pedidos. Toca Rehacer más tarde."});queue=[]}
+      else if(e && e.code==="rate_limited"){p.error=ERR.rate_limited;queue.forEach(q=>{q.status="err";q.error="No se armó por el límite de pedidos. Tocá Rehacer más tarde."});queue=[]}
       else p.error=ERR[e&&e.code]||ERR.upstream_error;
     }
     savePieces(); updatePiece(p);
@@ -532,7 +558,7 @@ $("#go").addEventListener("click",()=>{
   if(running) return;
   const batch=[];
   [...selected].forEach(id=>{const h=hookById(id);if(!h)return;
-    [...formats].forEach(f=>batch.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),hookId:h.id,hook:h.t,d:h.d,format:f,profile,text:"",status:"wait",created:new Date().toISOString()}))});
+    [...formats].forEach(f=>batch.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),hookId:h.id,hook:h.t,d:h.d,format:f,profile,cta:ctaGoal,text:"",status:"wait",created:new Date().toISOString()}))});
   if(!batch.length) return;
   pieces=[...batch,...pieces]; savePieces(); renderPieces(); showTab("pieces");
   queue=[...batch]; runQueue(false);
@@ -543,12 +569,12 @@ function showFallback(){
   const fb=$("#fallback"); fb.hidden=false;
   const waiting=pieces.filter(p=>!p.text);
   const target = waiting[0] || pieces[0];
-  fb.innerHTML=`<strong>Esta vista no puede llamar a Claude.</strong> Copia el pedido de abajo y pégamelo en el chat: te devuelvo la pieza armada.
+  fb.innerHTML=`<strong>Esta vista no puede llamar a Claude.</strong> Copiá el pedido de abajo y pegámelo en el chat: te devuelvo la pieza armada.
     ${target?`<textarea id="fb-text" readonly aria-label="Pedido para Claude"></textarea><div style="margin-top:8px"><button class="btn ghost" id="fb-copy" type="button">Copiar pedido</button></div>`:""}`;
   if(target){
     const all=waiting.length?waiting:[target];
     $("#fb-text").value = all.map(buildPrompt).join("\n\n==========\n\n");
-    $("#fb-copy").onclick=async()=>{try{await navigator.clipboard.writeText($("#fb-text").value);toast("Pedido copiado")}catch(e){$("#fb-text").select();toast("Texto seleccionado: cópialo con Ctrl/Cmd + C")}};
+    $("#fb-copy").onclick=async()=>{try{await navigator.clipboard.writeText($("#fb-text").value);toast("Pedido copiado")}catch(e){$("#fb-text").select();toast("Texto seleccionado: copialo con Ctrl/Cmd + C")}};
   }
 }
 

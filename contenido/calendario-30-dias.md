@@ -3,6 +3,8 @@
 Ritmo base por semana: **3 reels · 2 carruseles · historias diarias · 1 YouTube (alternando mentalidad/tips) · 1 vlog cada 2 semanas.**
 Cada semana tiene un **dolor protagonista**, y la semana 4 es de **apertura de cupos**.
 
+**Embudo:** en el feed, ~70 % 🟢 valor, ~25 % 🟡 medio del embudo y ~5 % 🔴 venta directa (solo el Reel 15, en la semana 4). La venta fuerte de los días de apertura va en historias. Ver [05-ctas-y-embudo.md](../estrategia/05-ctas-y-embudo.md).
+
 **Mezcla:** ~70 % emocional 💗 / ~30 % técnico 🧠 ([contenido-tecnico.md](contenido-tecnico.md)). Las piezas técnicas están marcadas con 🧠. Todas, emocionales o técnicas, siguen el viaje emocional completo.
 
 | Semana | Dolor protagonista | Objetivo de conciencia |

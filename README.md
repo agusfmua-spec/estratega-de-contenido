@@ -17,6 +17,7 @@ Y sobre tres reglas que no se negocian:
 | **Cuerpo = Dolor + Por qué yo** | En el desarrollo aparecen los dolores (dichos mejor de lo que ella los diría) y la razón por la que yo soy la solución. |
 | **Qué, nunca el cómo** | Muestro *qué* hay que cambiar y *qué* resultados produce. El *cómo* (el paso a paso real) vive dentro de mi programa. |
 | **Cada pieza es un viaje emocional** | Mi clienta es mujer y decide por emoción: anhelo → espejo → alivio → esperanza → confianza → decisión. |
+| **CTAs 70 / 25 / 5** | 70 % valor (guardar, compartir, lead magnet, enlaces a otras piezas), 20–25 % medio del embudo (historia, vulnerabilidad, opinión), 5 % venta directa. |
 | **70 % emocional · 30 % técnico** | Para la clienta analítica: datos, casos con métricas y la lógica del método, sin dejar de abrir con el sueño ni de cerrar con emoción. |
 
 ## Fábrica de Contenido (herramienta interactiva)
@@ -33,6 +34,7 @@ estrategia/
   02-formula-de-contenido.md  → La fórmula SUEÑO → DOLOR → PRUEBA → DIFERENCIA → INVITACIÓN
   03-banco-de-hooks.md        → +60 hooks "sell the dream" ordenados por dolor
   04-viaje-emocional.md       → El arco emocional, la emoción detrás de cada dolor, perfiles Intuitiva 💗 / Analítica 🧠
+  05-ctas-y-embudo.md         → Mix de CTAs 70/25/5, lead magnets y mapa de enlaces entre piezas
 contenido/
   reels.md                    → 15 guiones de reels con el arco emocional completo
   carruseles.md               → 8 carruseles slide por slide
